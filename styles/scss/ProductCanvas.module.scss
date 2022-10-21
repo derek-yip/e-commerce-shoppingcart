@@ -1,0 +1,33 @@
+.productCanvas_inner{
+    transition: 1s all ease-in-out;
+}
+
+.productItem_wrapper{
+    transition: .5s all ease-in;
+    padding-top: 3rem;
+    padding-right:3rem ;
+    &:hover{
+        &:nth-child(1){
+            background-color: #60dce5;
+        }
+        &:nth-child(2){
+            background-color: #43c1ca;
+        }
+        &:nth-child(3){
+            background-color: #2cbbc5;
+        }
+        &:nth-child(4){
+            background-color: #18aeb8;
+        }
+    }
+    &:hover p{
+        color: white;
+        border-color: white;
+    }
+    p{
+        transition: .2s all ease-in;
+        font-family:var(--Montserrat);
+        color:var(--bs-gray-800);
+        font-weight:300;
+    }
+}

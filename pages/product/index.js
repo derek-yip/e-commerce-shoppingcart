@@ -1,4 +1,5 @@
 import React from 'react'
+import ProductCanvas from '../../public/component/ProductCanvas'
 import Slider from '../../public/component/Slider'
 
 function Product() {
@@ -24,6 +25,7 @@ function Product() {
         </figure>
       </section>
 
+      <ProductCanvas />
     </>
   )
 }

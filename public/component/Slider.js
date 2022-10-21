@@ -10,14 +10,14 @@ function Slider(props) {
               {
                 if (index==0) {
                   return(
-                    <div className="carousel-item active">
+                    <div className="carousel-item active" key={index}>
                       <Image src={img} className="d-block w-100 h-100" alt="..." width={'2000'} height={'1000'} layout="intrinsic"/>
                     </div>
                   )
                 }
                 else{
                   return(
-                    <div className="carousel-item">
+                    <div className="carousel-item" key={index}>
                       <Image src={img} className="d-block w-100 h-100" alt="..." width={'2000'} height={'1000'} layout="intrinsic"/>
                     </div>
                   )
