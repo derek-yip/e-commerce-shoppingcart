@@ -1,20 +1,14 @@
+import { useRouter } from 'next/router'
 import React from 'react'
 
-function ProductItem({productId}) {
+function ProductItem() {
+  const router = useRouter()
+
   return (
     <div>
-      <p>{productId}</p>
+      <p>Product ID: {router.query.productId}</p>
     </div>
   )
-}
-
-export async function getStaticProps(context) {
-  const {productId} = context
-  return{
-    props:{
-      productId
-    }
-  }
 }
 
 export default ProductItem
