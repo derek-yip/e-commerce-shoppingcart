@@ -1,3 +1,11 @@
+.productCanvas{
+    margin-top: -5rem;
+    
+}
+.productCanvas_outer{
+    background-color: rgb(78, 206, 238);
+}
+
 .productCanvas_inner{
     height: 50vh;
     
@@ -52,22 +60,35 @@
     transition: .3s all ease-in-out;
     &:hover{
         color: black;
+        animation: 2s arrowMove linear infinite forwards;
     }
     
     &:hover img{
         background-color: aliceblue;
+        
     }
     &:hover span{
         opacity: 1;
     }
     img{
-        transition: .3s all ease-in-out;
-        border-radius: 50%;
-        border: 2px black solid!important;
+        margin-right: 2rem;
+        border-radius:50%;
+        border: 3px black solid!important;
         padding: 1rem!important;
+        overflow: visible;
     }
     span{
         transition: .5s all ease-in-out;
         opacity: 0;
+        overflow: visible;
+    }
+}
+
+@keyframes arrowMove {
+    50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0px);
     }
 }

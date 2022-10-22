@@ -1,4 +1,5 @@
 import React from 'react'
+import CategoriesCanvas from '../../public/component/CategoriesCanvas/CategoriesCanvas'
 import ProductCanvas from '../../public/component/ProductCanvas/ProductCanvas'
 import Slider from '../../public/component/Slider'
 
@@ -26,6 +27,7 @@ function Product() {
       </section>
 
       <ProductCanvas />
+      <CategoriesCanvas/>
     </>
   )
 }

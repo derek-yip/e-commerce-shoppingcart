@@ -15,14 +15,14 @@ function ProductCanvas() {
     }
 
     return (
-    <div className={`productCanvas`} >
+    <div className={`productCanvas ${ProductCanvasStyle.productCanvas}`}>
         <div className={`productCanvas_wrapper row d-flex`}>
-            <div className={`col-md-4 col-sm-5 bg-primary bg-opacity-25 p-5 shadow-lg d-flex justify-content-center align-items-center`}>
+            <div className={`productCanvas_outer col-md-4 col-sm-4 p-5 shadow-lg d-flex justify-content-center align-items-center ${ProductCanvasStyle.productCanvas_outer}`}>
                 <div className={`productCanvas_inner d-flex justify-content-center align-items-center ${ProductCanvasStyle.productCanvas_inner}`}>
                     <img src={`/img/product/Green Capsules.png`} alt='productDemo'></img>
                 </div>
             </div>
-            <div className={`col-md-8 col-sm-5 bg-primary bg-opacity-50 mt-5 rounded-end p-0`}>
+            <div className={`col-md-8 col-sm-8 my-md-5 rounded-end p-0`}>
                 {
                     ProductList.map((items,index)=>{
                         return(
