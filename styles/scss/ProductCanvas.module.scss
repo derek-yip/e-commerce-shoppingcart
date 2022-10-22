@@ -1,6 +1,10 @@
 .productCanvas_inner{
+    height: 50vh;
+    
     img{
         transition: 1s all ease-in-out;
+        max-height: 90%;
+        max-width: 100%;
     }
 }
 
