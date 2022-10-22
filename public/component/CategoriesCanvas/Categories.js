@@ -8,7 +8,7 @@ function Categories(props) {
         {
             props.layout[0]!=0?
                     <div className={`col-${props.layout[0]} p-0 mh-100`}>
-                        <div className={`d-flex flex-column justify-content-${props.text_position[0]} align-items-end pe-5 border-bottom border-dark h-100 mb-auto overflow-scroll`}>
+                        <div className={`d-flex flex-column justify-content-${props.text_position[0]} align-items-end pe-5 border-bottom border-dark h-100 overflow-scroll`}>
                             <h1 className="h1 text-end text-uppercase fw-lighter">
                                 {props.left_title}
                             </h1>
@@ -27,11 +27,11 @@ function Categories(props) {
         {
             props.layout[2]!=0 ?
                 <div className={`col-${props.layout[2]} mh-100 p-0`}>
-                    <div className={`border-bottom border-dark d-flex flex-column justify-content-${props.text_position[1]} align-items-start`}>
-                        <h1 className="h1 ps-5 text-end text-uppercase fw-lighter">
+                        <div className={`d-flex flex-column justify-content-${props.text_position[2]} align-items-start ps-5 border-bottom border-dark overflow-scroll ${props.text_position[2]=='center'? "h-100":''}`}>
+                        <h1 className="h1 text-end text-uppercase fw-lighter">
                             {props.right_title}
                         </h1>
-                        <p className="h1 ps-5 mb-0 text-uppercase fw-lighter">
+                        <p className="h1 mb-0 text-uppercase fw-lighter">
                             {props.right_content}
                         </p>
                     </div>
