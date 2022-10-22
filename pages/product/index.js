@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductCanvas from '../../public/component/ProductCanvas'
+import ProductCanvas from '../../public/component/ProductCanvas/ProductCanvas'
 import Slider from '../../public/component/Slider'
 
 function Product() {

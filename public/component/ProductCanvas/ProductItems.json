@@ -1,0 +1,22 @@
+[
+        {
+            "product":"Green Capsules",
+            "color":"#60dce5",
+            "image_url":"/img/product/Green Capsules.png"
+        },
+        {
+            "product":"Ocean Greens Calcium Plus",
+            "color":"#43c1ca",
+            "image_url":"/img/product/Ocean Greens Calcium Plus.png"
+        },
+        {
+            "product":"Japan Green Tea",
+            "color":"#2cbbc5",
+            "image_url":"/img/product/Japan Green Tea.png"
+        },
+        {
+            "product":"Green Capsules",
+            "color":"#18aeb8",
+            "image_url":"/img/product/DogSwell Gut Health.png"
+        }
+]
