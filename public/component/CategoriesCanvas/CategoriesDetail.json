@@ -1,27 +1,125 @@
-[
-    {
-        "categories":"Type 1",
-        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan justo ac nibh ullamcorper scelerisque. Aliquam vestibulum lectus ut accumsan sollicitudin. Aliquam ultrices varius urna. Integer pharetra eleifend eros, eu.",
-        "image_url":"type1.png"
-    },
-    {
-        "categories":"Type 2",
-        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat sagittis tincidunt. Maecenas aliquam leo laoreet, dignissim elit eu, viverra purus. Nam aliquam luctus quam, at porttitor lorem egestas in.",
-        "image_url":""
-    },
-    {
-        "categories":"Type 3",
-        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu nisi sit amet mauris ultrices consequat quis ac arcu. Sed neque neque, pellentesque a efficitur sit amet, viverra at mauris. Fusce non nibh non est.",
-        "image_url":""
-    },
-    {
-        "categories":"Type 4",
-        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet enim dignissim, facilisis turpis vel, lobortis purus. Etiam consectetur viverra sollicitudin. Nullam lacinia leo.",
-        "image_url":""
-    },
-    {
-        "categories":"Type 5",
-        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula tincidunt metus, at ultricies felis faucibus ac. In ac lobortis.",
-        "image_url":""
-    }
-]
+{
+    "ProductPage":[
+        {
+            "id":1,
+            "layout":[4,3,5],
+            "text_position":["end","","start"],
+            "title":
+                {
+                    "left":"Food",
+                    "right":"Beverage"
+                }
+            ,
+            "content":
+                {
+                    "left":"Lorem ipsum dolor sit ametmet, consectetudolor sit amet, consectetur adipiscing dipiscing elit. Mauris accumsan justo ac nibh ullamcorper scelerisque. Aliquam vestibulum lectus ut accumsan sollicitudin. Aliquam ultrices varius urna. Integer pharetra eleifend eros, eu.",
+                    "right":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan justo ac nibh ullamcorper scelerisque. Aliquam vestibulum lectus ut accumsan sollicitudin. Aliquam ultrices varius urna. Integer pharetra eleifend eros, eu."
+                }
+            ,
+            "img_url":
+                {   
+                    "default":"/img/product/categories/Food_01.jpg",
+                    "left":["/img/product/categories/Food_01.jpg","/img/product/categories/Food_02.jpg"],
+                    "right":["/img/product/categories/Beverage_01.jpg","/img/product/categories/Beverage_02.jpg"]
+                }
+            ,
+            "custom_height":
+                {
+                "left":"100%",
+                "right":"70%"
+                }
+            ,
+            "logan":
+                {
+                    "left":"",
+                    "right":"Right of Withdrawal: Goods Checklist!!"
+                }
+            ,
+            "color":{
+                "left":"#EAFCB8",
+                "right":"#BED6FA"
+            }
+        },
+        {
+            "id":2,
+            "layout":[5,7,0],
+            "text_position":["center","",""],
+            "title":
+                {
+                    "left":"Clothing",
+                    "right":""
+                }
+            ,
+            "content":
+                {
+                    "left":"Lorem ipsum dolor sit ametmet, consectetudolor sit amet, consectetur adipiscing dipiscing elit. Mauris accumsan justo ac nibh ullamcorper scelerisque. Aliquam vestibulum lectus ut accumsan sollicitudin. Aliquam ultrices varius urna. Integer pharetra eleifend eros, eu.",
+                    "right":""
+                }
+            ,
+            "img_url":
+                {
+                    "default":"/img/product/categories/Clothing_01.jpg",
+                    "left":["/img/product/categories/Clothing_01.jpg","/img/product/categories/Clothing_02.jpg"],
+                    "right":["",""]
+                }
+            ,
+            "custom_height":
+                {
+                "left":"100%",
+                "right":""
+                }
+            ,
+            "logan":
+                {
+                    "left":"",
+                    "right":""
+                }
+            ,
+            "color":{
+                "left":"#F3DEFC",
+                "right":""
+            }
+        },
+        {
+            "id":3,
+            "layout":[0,7,5],
+            "text_position":["","","center"],
+            "title":
+                {
+                    "left":"",
+                    "right":"Supplement"
+                }
+            ,
+            "content":
+                {
+                    "left":"",
+                    "right":"Lorem ipsum dolor sit ametmet, consectetudolor sit amet, consectetur adipiscing dipiscing elit. Mauris accumsan justo ac nibh ullamcorper scelerisque. Aliquam vestibulum lectus ut accumsan sollicitudin. Aliquam ultrices varius urna. Integer pharetra eleifend eros, eu."
+                }
+            ,
+            "img_url":
+                {
+                    "default":"/img/product/categories/Supplement_01.jpg",
+                    "left":["",""],
+                    "right":["/img/product/categories/Supplement_01.jpg","/img/product/categories/Supplement_02.jpg"]
+                }
+            ,
+            "custom_height":
+                {
+                "left":"",
+                "right":"100%"
+                }
+            ,
+            "logan":
+                {
+                    "left":"",
+                    "right":""
+                }
+            ,
+            "color":{
+                "left":"",
+                "right":"#FCC0AC"
+            }
+        }
+    ]
+}
+

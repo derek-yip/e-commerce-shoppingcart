@@ -1,39 +1,33 @@
 import React from 'react'
 import CategoriesCanvasStyle from '../../../styles/scss/CategoriesCanvas.module.scss'
 import Categories from './Categories'
+import CategoriesDetail from './CategoriesDetail.json'
 
-export default function CategoriesCanvas() {
+export default function CategoriesCanvas() {console.log(CategoriesDetail);
   return (
     <div className={`CategoriesCanvas ${CategoriesCanvasStyle.CategoriesCanvas}`}>
         <div className={`CategoriesWrapper col-12 ${CategoriesCanvasStyle.CategoriesWrapper}`}>
-            <Categories 
-                layout={[4,3,5]}
-                text_position={['end','','start']}
-                left_title={'Food'}
-                left_content={'Lorem ipsum dolor sit ametmet, consectetudolor sit amet, consectetur adipiscing dipiscing elit. Mauris accumsan justo ac nibh ullamcorper scelerisque. Aliquam vestibulum lectus ut accumsan sollicitudin. Aliquam ultrices varius urna. Integer pharetra eleifend eros, eu.'}
-                right_title={'Beverage'}
-                right_content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan justo ac nibh ullamcorper scelerisque. Aliquam vestibulum lectus ut accumsan sollicitudin. Aliquam ultrices varius urna. Integer pharetra eleifend eros, eu.'}
-                img_url={'/img/product/categories/Food_01.jpg'}
-                convert_img={'/img/product/categories/Food_02.jpg'}
-
-            />
-            <Categories 
-                layout={[5,7,0]}
-                text_position={['center','','']}
-                left_title={'Clothing'}
-                left_content={'Lorem ipsum dolor sit ametmet, consectetudolor sit amet, consectetur adipiscing dipiscing elit. Mauris accumsan justo ac nibh ullamcorper scelerisque. Aliquam vestibulum lectus ut accumsan sollicitudin. Aliquam ultrices varius urna. Integer pharetra eleifend eros, eu.'}
-                img_url={'/img/product/categories/Clothing_01.jpg'}
-                convert_img={'/img/product/categories/Clothing_02.jpg'}
-            />
-
-            <Categories 
-                layout={[0,7,5]}
-                text_position={['','','center']}
-                right_title={'Supplement'}
-                right_content={'Lorem ipsum dolor sit ametmet, consectetudolor sit amet, consectetur adipiscing dipiscing elit. Mauris accumsan justo ac nibh ullamcorper scelerisque. Aliquam vestibulum lectus ut accumsan sollicitudin. Aliquam ultrices varius urna. Integer pharetra eleifend eros, eu.'}
-                img_url={'/img/product/categories/Supplement_01.jpg'}
-                convert_img={'/img/product/categories/Supplement_02.jpg'}
-            />
+            {
+                
+                CategoriesDetail.ProductPage.map((detail,index)=>{
+                    return(
+                        <Categories
+                            layout={detail.layout}
+                            text_position={detail.text_position}
+                            left_title={detail.title.left}
+                            left_content={detail.content.left}
+                            right_title={detail.title.right}
+                            right_content={detail.content.right}
+                            default_img={detail.img_url.default}
+                            img_url={[detail.img_url.left[0],detail.img_url.right[0]]}
+                            convert_img={[detail.img_url.left[1],detail.img_url.right[1]]}
+                            custom_height={[detail.custom_height.left,detail.custom_height.right]}
+                            logan={[detail.logan.left,detail.logan.right]}
+                            color={[detail.color.left,detail.color.right]}
+                        />
+                    )
+                })
+            }
         </div>
     </div>
   )
