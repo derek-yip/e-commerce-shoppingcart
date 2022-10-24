@@ -3,14 +3,15 @@ import CategoriesCanvasStyle from '../../../styles/scss/CategoriesCanvas.module.
 import Categories from './Categories'
 import CategoriesDetail from './CategoriesDetail.json'
 
-export default function CategoriesCanvas() {console.log(CategoriesDetail);
+export default function CategoriesCanvas() {
   return (
-    <div className={`CategoriesCanvas ${CategoriesCanvasStyle.CategoriesCanvas}`}>
-        <div className={`CategoriesWrapper col-12 ${CategoriesCanvasStyle.CategoriesWrapper}`}>
+    <div className={`CategoriesCanvas col-12 ${CategoriesCanvasStyle.CategoriesCanvas}`}>
             {
                 
                 CategoriesDetail.ProductPage.map((detail,index)=>{
                     return(
+                        
+                    <div className={`CategoriesWrapper`} key={index}>
                         <Categories
                             layout={detail.layout}
                             text_position={detail.text_position}
@@ -25,10 +26,10 @@ export default function CategoriesCanvas() {console.log(CategoriesDetail);
                             logan={[detail.logan.left,detail.logan.right]}
                             color={[detail.color.left,detail.color.right]}
                         />
+                    </div>
                     )
                 })
             }
-        </div>
     </div>
   )
 }

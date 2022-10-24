@@ -1,5 +1,8 @@
+
 .CategoriesCanvas{
     background: linear-gradient(180deg, rgba(243,255,248,1) 0%, rgba(129,235,219,1) 30%);
+    margin-top: -5rem;
+    padding-top: 10rem;
 }
 
 .Categories{
@@ -7,31 +10,42 @@
     height: 100%;
     position: relative;
     h1{
-        font-size: 5rem;
+        font-size: 4rem;
         max-height: 100%;
         overflow: scroll;
     }
     p{
         text-align: justify;
         font-size: 1.5rem;
-        padding: 2rem 1rem;
-        width: 80%;
+        width: 85%;
     }
-    img{
-        width: 100%;
-        height: 100%;
+    @media (max-width: 768px){
+        h1{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size:0.85rem;
+        }
+    }
+    @media (max-width: 992px) {
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            font-size:1.2rem;
+        }
     }
     
 }
 
-.CategoriesWrapper{
-    margin-top: -5rem;
-    padding-top: 10rem;
-}
 .Grid{
     transition: 1s all ease-in-out;
+    cursor: pointer;
     &:hover{
         background-color: var(--hover_color);
+    }
+    &:hover .GridPhoto{
+        background: var(--convert_img);
     }
 }
 .UpperGrid{
@@ -42,22 +56,27 @@
     overflow: auto;
     white-space:nowrap;
     span{
-        font-size: 8rem;
+        font-size: 7rem;
         width: inherit;
         padding: 0;
         font-weight: bolder;
         font-family: var(--Playfair);
-        -webkit-text-fill-color: transparent;
+        color: transparent;
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: black;
         animation: 15s slideLeft forwards infinite linear;
-        transition: 1s all ease-in-out;
+        transition: .3s all ease-in-out;
         cursor: default;
         &:hover{
-            -webkit-text-fill-color: whitesmoke;
+            color: rgb(247, 249, 207);
             -webkit-text-stroke-color: black;
         }
     }
+}
+.GridPhoto{
+    background:var(--default_img) center/cover;
+    min-height: 90vh;
+    transition: .5s all ease-in-out;
 }
 
 @keyframes slideLeft {

@@ -3,7 +3,7 @@
         {
             "id":1,
             "layout":[4,3,5],
-            "text_position":["end","","start"],
+            "text_position":["end","","center"],
             "title":
                 {
                     "left":"Food",

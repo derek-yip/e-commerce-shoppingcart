@@ -9,9 +9,7 @@ function ProductCanvas() {
     function ImgChanged(e) {
         const productItem_wrapper = document.querySelectorAll(".productItem_wrapper")[e];
         const targetImg = document.querySelector('.productCanvas_inner img');
-        targetImg.src = productItem_wrapper.getAttribute('productimg')
-        console.log(targetImg.src);
-        
+        targetImg.src = productItem_wrapper.getAttribute('productimg')        
     }
 
     return (
