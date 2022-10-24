@@ -1,6 +1,7 @@
 .productCanvas{
-    margin-top: -5rem;
-    
+    @media (min-width:992px) {
+        margin-top: -5rem;      
+    }
 }
 .productCanvas_outer{
     background-color: rgb(78, 206, 238);

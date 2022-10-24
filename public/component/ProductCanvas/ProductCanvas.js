@@ -15,12 +15,12 @@ function ProductCanvas() {
     return (
     <div className={`productCanvas ${ProductCanvasStyle.productCanvas}`}>
         <div className={`productCanvas_wrapper row d-flex`}>
-            <div className={`productCanvas_outer col-md-4 col-sm-4 p-5 shadow-lg d-flex justify-content-center align-items-center ${ProductCanvasStyle.productCanvas_outer}`}>
+            <div className={`productCanvas_outer col-lg-5 col-md-6 col-12 p-5 shadow-lg d-flex justify-content-center align-items-center ${ProductCanvasStyle.productCanvas_outer}`}>
                 <div className={`productCanvas_inner d-flex justify-content-center align-items-center ${ProductCanvasStyle.productCanvas_inner}`}>
                     <img src={`/img/product/Green Capsules.png`} alt='productDemo'></img>
                 </div>
             </div>
-            <div className={`col-md-5 col-sm-8 my-md-5 rounded-end p-0`}>
+            <div className={`col-lg-7 col-md-6 col-12 my-md-5 rounded-end p-0`}>
                 {
                     ProductList.map((items,index)=>{
                         return(
@@ -35,7 +35,7 @@ function ProductCanvas() {
                         )
                     })
                 }
-                <div className={`col-sm-12 d-flex justify-content-end align-items-center`}>
+                <div className={` col-sm-12 d-flex justify-content-end align-items-center`}>
                     <Link href={'/product/categories'}>
                         <a className={`d-flex justify-content-end align-items-center ${ProductCanvasStyle.arrowCover}`}>
                             <span className='h2 me-3 fw-light'>View More</span>
