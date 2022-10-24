@@ -20,7 +20,7 @@ function ProductCanvas() {
                     <img src={`/img/product/Green Capsules.png`} alt='productDemo'></img>
                 </div>
             </div>
-            <div className={`col-md-8 col-sm-8 my-md-5 rounded-end p-0`}>
+            <div className={`col-md-5 col-sm-8 my-md-5 rounded-end p-0`}>
                 {
                     ProductList.map((items,index)=>{
                         return(

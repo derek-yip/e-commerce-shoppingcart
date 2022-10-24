@@ -40,6 +40,7 @@
 
 .Grid{
     transition: 1s all ease-in-out;
+    min-height: 90vh;
     cursor: pointer;
     &:hover{
         background-color: var(--hover_color);

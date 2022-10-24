@@ -2,7 +2,10 @@
     "ProductPage":[
         {
             "id":1,
-            "layout":[4,3,5],
+            "layout":{
+                "lg":[4,3,5],
+                "md":[6,6,12]
+            },
             "text_position":["end","","center"],
             "title":
                 {
@@ -42,7 +45,10 @@
         },
         {
             "id":2,
-            "layout":[5,7,0],
+            "layout":{
+                "lg":[5,7,0],
+                "md":[6,6,0]
+            },
             "text_position":["center","",""],
             "title":
                 {
@@ -82,7 +88,10 @@
         },
         {
             "id":3,
-            "layout":[0,7,5],
+            "layout":{
+                "lg":[0,7,5],
+                "md":[0,6,6]
+            },
             "text_position":["","","center"],
             "title":
                 {
