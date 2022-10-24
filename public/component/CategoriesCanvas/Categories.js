@@ -5,13 +5,11 @@ import CategoriesCanvasStyle from '../../../styles/scss/CategoriesCanvas.module.
 function Categories(props) {
 
     function GridBackgroundInvert(e) {
-        const target = e.parentNode;
-        const img =target.getAttribute('convert_img');
+        const img =e.getAttribute('convert_img');
         const targetImg = document.querySelectorAll('.GridPhoto')
         targetImg.forEach(targetImg => {
          targetImg.style.backgroundImage = `url(${img})`
        });
-       console.log(e);
     }
 
   return (
@@ -22,7 +20,7 @@ function Categories(props) {
                 <Link href={`/product/${props.left_title}`}>
                     <div className={`col-${props.layout[0]} p-0 mh-100 ${CategoriesCanvasStyle.Grid}`} 
                         style={{"--hover_color":`${props.color[0]}`}} convert_img={`${props.convert_img[0]}`}
-                        onMouseEnter={(e)=>GridBackgroundInvert(e.target)}
+                        onMouseEnter={(e)=>GridBackgroundInvert(e.currentTarget)}
                         >
                         <div className={`d-flex flex-column justify-content-${props.text_position[0]} align-items-end pe-5 py-4 border-bottom border-dark h-100 overflow-scroll`} style={{"--custom_height":`${props.custom_height[0]}`}}>
                             <h1 className=" text-end text-uppercase fw-lighter">
@@ -39,7 +37,7 @@ function Categories(props) {
                     <div className={`col-${props.layout[0]} p-0 mh-100 ${CategoriesCanvasStyle.Grid}`} 
                     style={{"--hover_color":`${props.color[0]}`}} 
                     convert_img={`${props.convert_img[0]}`}
-                    onmo={(e)=>GridBackgroundInvert(e.target)}>
+                    onmo={(e)=>GridBackgroundInvert(e.currentTarget)}>
                         <div className={`d-flex flex-column justify-content-${props.text_position[0]} align-items-end pe-5 border-bottom border-dark overflow-scroll ${CategoriesCanvasStyle.UpperGrid}`} style={{"--custom_height":`${props.custom_height[0]}`}}>
                             
                             <h1 className=" text-end text-uppercase fw-lighter">
@@ -67,7 +65,7 @@ function Categories(props) {
                     <div className={`col-${props.layout[2]} mh-100 p-0 ${CategoriesCanvasStyle.Grid}`} 
                         style={{"--hover_color":`${props.color[1]}`}} 
                         convert_img={`${props.convert_img[1]}`}
-                        onMouseEnter={(e)=>GridBackgroundInvert(e.target)}
+                        onMouseEnter={(e)=>GridBackgroundInvert(e.currentTarget)}
                         >
                             <div className={`d-flex flex-column justify-content-${props.text_position[2]} align-items-start ps-5 py-4 border-bottom border-dark overflow-scroll h-100`}>
                             <h1 className=" text-end text-uppercase fw-lighter">
@@ -82,10 +80,8 @@ function Categories(props) {
                 :
                 <Link href={`/product/${props.right_title}`}>
                     <div className={`col-${props.layout[2]} mh-100 p-0 ${CategoriesCanvasStyle.Grid}`} 
-                    style={{"--hover_color":`${props.color[1]}`}} 
-                    convert_img={`${props.convert_img[1]}`}
-                    onMouseEnter={(e)=>GridBackgroundInvert(e.target)}
-                    >
+                        style={{"--hover_color":`${props.color[1]}`}} convert_img={`${props.convert_img[1]}`}
+                        onMouseEnter={(e)=>GridBackgroundInvert(e.currentTarget)}>
                         <div className={`d-flex flex-column justify-content-${props.text_position[2]} align-items-start ps-5 py-4 border-bottom border-dark overflow-scroll ${CategoriesCanvasStyle.UpperGrid}`} style={{"--custom_height":`${props.custom_height[1]}`}}>
                             <h1 className=" text-end text-uppercase fw-lighter">
                                 {props.right_title}
