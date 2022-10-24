@@ -1,0 +1,383 @@
+
+[
+    {
+        "id": "63566dba91f9f9e98e50b5c2",
+        "productName": "Tostitos Variety Bite Sized Rounds Salsa Cups Nacho Cheese Cups, Chip and Dip Pack, 16 Count",
+        "categories": "Food",
+        "product_detail": "productDetail",
+        "price": {
+            "originalPrice": 606,
+            "discountPrice": 401
+        },
+        "producer": {
+            "name": "Vasquez Robbins",
+            "address": "219 Clymer Street - Bridgetown, Maryland, British Indian Ocean Territory.",
+            "detail": "string",
+            "phone": "+55 (83) 95952-4609",
+            "logo": "Tostitos-logo.png"
+        },
+        "nation": "USA",
+        "img_url": "81XRi95WamL._SL1500_.jpg"
+    },
+    {
+        "id": "63566dba91f9f9e98e50b5c2",
+        "productName": "Pop-Tarts Toaster Pastries, 5 Flavor Variety Pack, Breakfast Foods, Fun Snacks for Kids, 5 Boxes (60 Pop-Tarts)",
+        "categories": "Food",
+        "product_detail": "Soft toaster pastries with the flavors of frosted strawberry, blueberry, brown sugar cinnamon, or cookies and crème topped with delicious frosting; Sweet, fully baked, and ready to eat",
+        "price": {
+            "originalPrice": 606,
+            "discountPrice": 401
+        },
+        "producer": {
+            "name": "Vasquez Robbins",
+            "address": "219 Clymer Street - Bridgetown, Maryland, British Indian Ocean Territory.",
+            "detail": "string",
+            "phone": "+55 (83) 95952-4609",
+            "logo": "Pop-tarts_Logo_4x4-Overlay.png"
+        },
+        "nation": "Germany",
+        "img_url": "81HnwYDxSlL._SL1500_.jpg"
+    },
+    {
+        "id": "63566dbace75091c5ca8844b",
+        "productName": "Quaker Chewy Granola Bars, Chewy & Dipps Variety Pack, (58 Bars)",
+        "categories": "Food",
+        "product_detail": "Features 12 chocolate chip, 12 peanut butter chocolate chip, and 10 s'mores flavor Chewy granola bars, plus 12 chocolate chip and 12 peanut butter flavor Chewy Dipps chocolate covered granola bars",
+        "price": {
+            "originalPrice": 627,
+            "discountPrice": 404
+        },
+        "producer": {
+            "name": "Rory Sexton",
+            "address": "494 Lamont Court - Belgreen, Oklahoma, Cote D Ivoire(Ivory Coast).",
+            "detail": "string",
+            "phone": "+55 (83) 98786-7350",
+            "logo": "5aa8e5bd7603fc558cffbf55.png"
+        },
+        "nation": "Germany",
+        "img_url": "81eCDpdoKbS._SL1500_.jpg"
+    },
+    {
+        "id": "63566dbabf58d45e5441f0bb",
+        "productName": "CELSIUS Essential Energy Drink 12 Fl Oz, Peach Mango Green Tea (Pack of 12)",
+        "categories": "Beverage",
+        "product_detail": "Gluten-Free, Kosher, Non-GMO, & Certified Vegan. Ingredients-Green Tea Extract, Guarana Seed Extract, Ginger Root, Vitamin B, Vitamin C, Chromium",
+        "price": {
+            "originalPrice": 663,
+            "discountPrice": 451
+        },
+        "producer": {
+            "name": "Riley Kline",
+            "address": "448 Scholes Street - Duryea, Tennessee, East Timor.",
+            "detail": "string",
+            "phone": "+55 (83) 98933-4767",
+            "logo": "3f962a4c6a799cf386e882a9dcac88a8.png"
+        },
+        "nation": "Finland",
+        "img_url": "715UUTKX66L._SL1500_.jpg"
+    },
+    {
+        "id": "63566dba0b825423db876480",
+        "productName": "Bloom Nutrition Green Superfood | Super Greens Powder Juice & Smoothie Mix | Complete Whole Foods",
+        "categories": "Supplement",
+        "product_detail": "All Natural Ingredients - Our number one goal is to create a healthy product packed with essential nutrients and organic superfoods that provide the nutritional support your body needs. Our premium Greens powder is 100% natural, sugar free, low carb, keto-friendly, non-GMO and certified vegan.",
+        "price": {
+            "originalPrice": 850,
+            "discountPrice": 471
+        },
+        "producer": {
+            "name": "Jo Rosales",
+            "address": "996 Norwood Avenue - Elbert, North Carolina, Latvia.",
+            "detail": "string",
+            "phone": "+55 (83) 90223-8871",
+            "logo": "bloom-logo_transparent.png"
+        },
+        "nation": "Egypt",
+        "img_url": "51NsPpJSQJL._AC_SL1114_.jpg"
+    },
+    {
+        "id": "63566dba4b3c4aef7db0fc49",
+        "productName": "Mott's Fruit Flavored Snacks, Assorted Fruit, Pouches, 0.8 oz, 40 ct",
+        "categories": "Food",
+        "product_detail": "FRUIT FLAVORED SNACKS: Gummy treats the whole family can enjoy; Made with real fruit and veggie juice and individually wrapped for on-the-go convenience",
+        "price": {
+            "originalPrice": 665,
+            "discountPrice": 482
+        },
+        "producer": {
+            "name": "Embry Grant",
+            "address": "504 Applegate Court - Verdi, Pennsylvania, Niue.",
+            "detail": "string",
+            "phone": "+55 (83) 95360-5948",
+            "logo": "1602558.png"
+        },
+        "nation": "New Zealand",
+        "img_url": "814DtzezQuL._SL1500_.jpg"
+    },
+    {
+        "id": "63566dba182455ed211fdd3b",
+        "productName": "Royal Dansk Danish Cookies Tin, butter, 24 Ounce",
+        "categories": "Food",
+        "product_detail": "CRISP, BUTTERY COOKIE CLASSICS: Discover a selection of rich Danish butter cookies inside this 24-ounce tin – all with pure butter cookie taste and some with a flavorful coconut or vanilla twist.",
+        "price": {
+            "originalPrice": 977,
+            "discountPrice": 459
+        },
+        "producer": {
+            "name": "Emery Nolan",
+            "address": "66 Catherine Street - Eagletown, Michigan, France, Metropolitan.",
+            "detail": "string",
+            "phone": "+55 (83) 98762-9832",
+            "logo": "royal-dansk-logo.png"
+        },
+        "nation": "Belarus",
+        "img_url": "71a4aGPpmFL._SL1000_.jpg"
+    },
+    {
+        "id": "63566dba5a211f407545f837",
+        "productName": "product",
+        "categories": "Supplement",
+        "product_detail": "productDetail",
+        "price": {
+            "originalPrice": 810,
+            "discountPrice": 492
+        },
+        "producer": {
+            "name": "Savage Compton",
+            "address": "765 Newel Street - Springville, Georgia, Tanzania.",
+            "detail": "string",
+            "phone": "+55 (83) 92906-8110",
+            "logo": ""
+        },
+        "nation": "Belarus",
+        "img_url": ""
+    },
+    {
+        "id": "63566dbac4e9ddb1846c2686",
+        "productName": "product",
+        "categories": "Clothing",
+        "product_detail": "productDetail",
+        "price": {
+            "originalPrice": 623,
+            "discountPrice": 413
+        },
+        "producer": {
+            "name": "Sage Fox",
+            "address": "678 Eaton Court - Greenock, Washington, Viet Nam.",
+            "detail": "string",
+            "phone": "+55 (83) 95818-7059",
+            "logo": ""
+        },
+        "nation": "Brazil",
+        "img_url": ""
+    },
+    {
+        "id": "63566dbae8e526a85b29656d",
+        "productName": "product",
+        "categories": "Beverage",
+        "product_detail": "productDetail",
+        "price": {
+            "originalPrice": 644,
+            "discountPrice": 451
+        },
+        "producer": {
+            "name": "Jesse Austin",
+            "address": "534 Varick Street - Heil, Kentucky, Luxembourg.",
+            "detail": "string",
+            "phone": "+55 (83) 90408-7204",
+            "logo": ""
+        },
+        "nation": "New Zealand",
+        "img_url": ""
+    },
+    {
+        "id": "63566dba3e48a76f1fc49c66",
+        "productName": "product",
+        "categories": "Clothing",
+        "product_detail": "productDetail",
+        "price": {
+            "originalPrice": 903,
+            "discountPrice": 404
+        },
+        "producer": {
+            "name": "Jude Battle",
+            "address": "37 Clinton Street - Kiskimere, Alaska, Uruguay.",
+            "detail": "string",
+            "phone": "+55 (83) 93343-9002",
+            "logo": ""
+        },
+        "nation": "USA",
+        "img_url": ""
+    },
+    {
+        "id": "63566dba395700896172a333",
+        "productName": "product",
+        "categories": "Clothing",
+        "product_detail": "productDetail",
+        "price": {
+            "originalPrice": 848,
+            "discountPrice": 418
+        },
+        "producer": {
+            "name": "Donovan Hutchinson",
+            "address": "269 Varick Street - Heil, Kentucky, Luxembourg.",
+            "detail": "string",
+            "phone": "+55 (83) 99854-4298",
+            "logo": ""
+        },
+        "nation": "Belarus",
+        "img_url": ""
+    },
+    {
+        "id": "63566dbaf447aa89225fda06",
+        "productName": "product",
+        "categories": "Food",
+        "product_detail": "productDetail",
+        "price": {
+            "originalPrice": 770,
+            "discountPrice": 484
+        },
+        "producer": {
+            "name": "Hill Meadows",
+            "address": "790 Franklin Avenue - Cloverdale, Wisconsin, St. Pierre and Miquelon.",
+            "detail": "string",
+            "phone": "+55 (83) 95914-9978",
+            "logo": ""
+        },
+        "nation": "Egypt",
+        "img_url": ""
+    },
+    {
+        "id": "63566dba8879dbb66622e5f9",
+        "productName": "TheraCran One Cranberry Supplement | 36mg PACs Per Capsule",
+        "categories": "Supplement",
+        "product_detail": "EVIDENCE-BASED FORMULA & DOSING: Contains 36 mg of PACs per capsule, the amount that has been shown in scientific studies to promote urinary tract health.* Proanthocyanidins (PACs) are compounds naturally occurring in cranberries. According to a new FDA qualified health claim, limited scientific evidence shows that by consuming 500mg of a cranberry supplement per day, healthy women may reduce their risk of recurrent UTI.",
+        "price": {
+            "originalPrice": 658,
+            "discountPrice": 443
+        },
+        "producer": {
+            "name": "Hill Meadows",
+            "address": "709 Milford Street - Hoehne, Connecticut, Azerbaijan.",
+            "detail": "string",
+            "phone": "+55 (83) 95747-6967",
+            "logo": "theralogix-logo-brandpage.png"
+        },
+        "nation": "Germany",
+        "img_url": "71T2x4QVGIL._AC_SL1500_.jpg"
+    },
+    {
+        "id": "63566dba3757b8587b327ef2",
+        "productName": "SeSe Code Women's V Neck Long Sleeve Floral Shirts Flared Dressy Casual Tunic Tops",
+        "categories": "Clothing",
+        "product_detail": "FLATTERS YOUR FIGURE Because of the front fold design, you can easily hide away any fat along your hips or belly, creating a more flattering silhouette and making you feel more confident. The slit V-neck, as well as the chest button, brings with it plenty of feminine appeal",
+        "price": {
+            "originalPrice": 859,
+            "discountPrice": 454
+        },
+        "producer": {
+            "name": "August Case",
+            "address": "568 Bartlett Place - Cherokee, Florida, Croatia (Hrvatska).",
+            "detail": "string",
+            "phone": "+55 (83) 99189-5685",
+            "logo": "H&M-Logo.png"
+        },
+        "nation": "Egypt",
+        "img_url": "71AgxNEXgpL._AC_UY550_.jpg"
+    },
+    {
+        "id": "63566dba98636e1010b2854a",
+        "productName": "AUTOMET Women’s Fleece Lined Sweatpants Baggy Cinch Bottom Lounge Pants Drawstring Casual Athletic Joggers with Pockets",
+        "categories": "Clothing",
+        "product_detail": "Baggy sweatpants for women,sweat pants women casual,high waisted joggers for women,cute pants for teen girls,sweat pants women soft,fleece lined pants women,comfy pants women,thick sweatpants for women,warm sweatpants women,lounge pants women,fleece joggers for women.",
+        "price": {
+            "originalPrice": 983,
+            "discountPrice": 448
+        },
+        "producer": {
+            "name": "Shiloh Tran",
+            "address": "659 Lamont Court - Belgreen, Oklahoma, Cote D Ivoire(Ivory Coast).",
+            "detail": "string",
+            "phone": "+55 (83) 98947-7247",
+            "logo": "H&M-Logo.png"
+        },
+        "nation": "France",
+        "img_url": "61WagTQov-L._AC_UY550_.jpg"
+    },
+    {
+        "id": "63566dba01e4736a7d90ae14",
+        "productName": "Saloogoe Womens Sweatpants Baggy High Waisted Fall Pants Cinch Bottom Joggers with Pockets",
+        "categories": "Clothing",
+        "product_detail": "The cinch bottom provides greater freedom of movement without wetting the bottoms. The ankle cuffs are elastically designed to keep trouser legs in good shape, lengthen your legs visually.",
+        "price": {
+            "originalPrice": 915,
+            "discountPrice": 463
+        },
+        "producer": {
+            "name": "Kaylor William",
+            "address": "15 Blake Court - Esmont, South Carolina, Chad.",
+            "detail": "string",
+            "phone": "+55 (83) 98502-1030",
+            "logo": "H&M-Logo.png"
+        },
+        "nation": "New Zealand",
+        "img_url": "81EPPI2SKCL._AC_UY550_.jpg"
+    },
+    {
+        "id": "63566dba1d654c54436b524f",
+        "productName": "StarKist Lunch To-Go Chunk Light Pouch - Mix Your Own Tuna Salad -4.1 Ounce, 12 count",
+        "categories": "Food",
+        "product_detail": "Lunch To-Go Chunk Light Mix Your Own Tuna Salad comes complete with: 2.6 oz. Lunch To-Go Chunk Light in the StarKist Flavor Fresh Pouch, Reduced calorie mayonnaise and relish packets,Mixing Spoon & 6 crackers & Mint & Napkin, Mix it to your own taste anytime, anywhere! 18g of protein per kit!",
+        "price": {
+            "originalPrice": 624,
+            "discountPrice": 453
+        },
+        "producer": {
+            "name": "Jody Newton",
+            "address": "566 Norwood Avenue - Elbert, North Carolina, Latvia.",
+            "detail": "string",
+            "phone": "+55 (83) 97079-0686",
+            "logo": "Starkist.png"
+        },
+        "nation": "Belarus",
+        "img_url": "813o+QuNeaL._SL1500_.jpg"
+    },
+    {
+        "id": "63566dba8c3a607010f1e197",
+        "productName": "Wonderful Pistachios, Roasted and Salted Nuts, 1.5 Ounce Bag (Pack of 9)",
+        "categories": "Supplement",
+        "product_detail": "CALIFORNIA GROWN: Wonderful Pistachios owns, cultivates and harvests more than 75,000 acres of pistachio and almond California orchards, where we carefully tend and harvest using the latest sustainable practices.",
+        "price": {
+            "originalPrice": 996,
+            "discountPrice": 418
+        },
+        "producer": {
+            "name": "Addison Allen",
+            "address": "492 Belmont Avenue - Vienna, Virginia, Svalbard and Jan Mayen Islands.",
+            "detail": "string",
+            "phone": "+55 (83) 98921-9929",
+            "logo": "WP_stacked_blk.png"
+        },
+        "nation": "Germany",
+        "img_url": "81vvSoE3qzL._SL1500_.jpg"
+    },
+    {
+        "id": "63566dbae4bfc2b33c1f9be0",
+        "productName": "PLANTERS Deluxe Lightly Salted Whole Cashews, 1lb 2.25oz . Resealable Canister - Lightly Salted Cashews & Lightly Salted Nuts ",
+        "categories": "Food",
+        "product_detail": "productDetail",
+        "price": {
+            "originalPrice": 775,
+            "discountPrice": 482
+        },
+        "producer": {
+            "name": "Campbell Bryant",
+            "address": "259 Cornelia Street - Salix, Texas, Guinea-Bissau.",
+            "detail": "string",
+            "phone": "+55 (83) 98976-3749",
+            "logo": "Planters-Logo.png"
+        },
+        "nation": "USA",
+        "img_url": "81k9r1EnY5L._SL1500_.jpg"
+    }
+]

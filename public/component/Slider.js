@@ -5,13 +5,13 @@ function Slider(props) {
 
   return (
     <div id="carouselExampleControls" className="carousel slide " data-bs-ride="carousel" data-bs-interval={props.interval} data-bs-pause='hover'>
-        <div className="carousel-inner w-100 h-100">
+        <div className="carousel-inner w-100 h-100 overflow-hidden" style={{maxHeight:"100vh"}}>
           {ImgList.map((img,index)=>{
               {
                 if (index==0) {
                   return(
                     <div className="carousel-item active" key={index}>
-                      <Image src={img} className="d-block w-100 h-100" alt="..." width={'2000'} height={'1000'} layout="intrinsic"/>
+                      <Image src={img} className="d-block w-100 h-100" alt="..." width={'2000'} height={'1000'} layout='intrinsic'/>
                     </div>
                   )
                 }

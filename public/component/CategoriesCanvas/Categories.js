@@ -22,7 +22,7 @@ function Categories(props) {
                         style={{"--hover_color":`${props.color[0]}`}} convert_img={`${props.convert_img[0]}`}
                         onMouseEnter={(e)=>GridBackgroundInvert(e.currentTarget)}
                         >
-                        <div className={`d-flex flex-column justify-content-${props.text_position[0]} align-items-end justify-content-sm-center align-items-sm-center pe-5 pe-sm-0 py-4 border-bottom border-dark h-100 overflow-scroll`} style={{"--custom_height":`${props.custom_height[0]}`}}>
+                        <div className={`d-flex flex-column justify-content-lg-${props.text_position[0]} align-items-lg-end justify-content-center align-items-center pe-lg-5 pe-sm-0 py-4 border-bottom border-dark h-100 overflow-scroll`} style={{"--custom_height":`${props.custom_height[0]}`}}>
                             <h1 className=" text-end text-uppercase fw-lighter">
                                 {props.left_title}
                             </h1>
@@ -38,7 +38,7 @@ function Categories(props) {
                     style={{"--hover_color":`${props.color[0]}`}} 
                     convert_img={`${props.convert_img[0]}`}
                     onmo={(e)=>GridBackgroundInvert(e.currentTarget)}>
-                        <div className={`d-flex flex-column justify-content-${props.text_position[0]} align-items-end justify-content-sm-center align-items-sm-center pe-5 pe-sm-0 border-bottom border-dark overflow-scroll ${CategoriesCanvasStyle.UpperGrid}`} style={{"--custom_height":`${props.custom_height[0]}`}}>
+                        <div className={`d-flex flex-column justify-content-lg-${props.text_position[0]} align-items-lg-end justify-content-center align-items-center pe-lg-5 pe-sm-0 border-bottom border-dark overflow-scroll ${CategoriesCanvasStyle.UpperGrid}`} style={{"--custom_height":`${props.custom_height[0]}`}}>
                             
                             <h1 className=" text-end text-uppercase fw-lighter">
                                 {props.left_title}
@@ -67,7 +67,7 @@ function Categories(props) {
                         convert_img={`${props.convert_img[1]}`}
                         onMouseEnter={(e)=>GridBackgroundInvert(e.currentTarget)}
                         >
-                            <div className={`d-flex flex-column justify-content-${props.text_position[2]} align-items-start justify-content-sm-center align-items-sm-center ps-5 ps-sm-0 py-4 border-bottom border-dark overflow-scroll h-100`}>
+                        <div className={`d-flex flex-column justify-content-lg-${props.text_position[2]} align-items-lg-start justify-content-center align-items-center ps-lg-5 ps-sm-0 py-4 border-bottom border-dark overflow-scroll h-100`}>
                             <h1 className=" text-end text-uppercase fw-lighter">
                                 {props.right_title}
                             </h1>
@@ -82,7 +82,7 @@ function Categories(props) {
                     <div className={`col-lg-${props.layout.lg[2]} col-md-${props.layout.md[2]} mh-100 p-0 ${CategoriesCanvasStyle.Grid}`} 
                         style={{"--hover_color":`${props.color[1]}`}} convert_img={`${props.convert_img[1]}`}
                         onMouseEnter={(e)=>GridBackgroundInvert(e.currentTarget)}>
-                        <div className={`d-flex flex-column justify-content-${props.text_position[2]} align-items-start justify-content-sm-center align-items-sm-center ps-5 py-4 ps-sm-0 border-bottom border-dark overflow-scroll ${CategoriesCanvasStyle.UpperGrid}`} style={{"--custom_height":`${props.custom_height[1]}`}}>
+                        <div className={`d-flex flex-column justify-content-${props.text_position[2]} align-items-lg-start justify-content-center align-items-center ps-lg-5 py-4 ps-sm-0 border-bottom border-dark overflow-scroll ${CategoriesCanvasStyle.UpperGrid}`} style={{"--custom_height":`${props.custom_height[1]}`}}>
                             <h1 className=" text-end text-uppercase fw-lighter">
                                 {props.right_title}
                             </h1>
