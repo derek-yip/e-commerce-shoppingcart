@@ -21,7 +21,7 @@ function ProductSliderBar(props) {
       <Swiper
       modules={[Navigation,Pagination]}
       spaceBetween={0}
-      slidesPerView={5}
+      slidesPerView={4}
       navigation={true}
       pagination={{
         clickable: true,
@@ -31,15 +31,17 @@ function ProductSliderBar(props) {
           List.map((product)=>{
             return(
             <SwiperSlide>
-                <Link href={`/product/${product.categories}/${product.id}`}>
-                  <div key={product.id} className={`pointer product_item py-3 px-5 ${ProductSLiderBarStyle.product_item}`}>
-                    <Image src={`/img/product/${product.img_url}`} width={500} height={500}/>
-                    <div className={`productDetail`}>  
-                      <h1 className={`h3`}>{product.productName}</h1>
-                      <p>{product.product_detail}</p>
-                    </div>
-                  </div>
-                </Link> 
+                <div key={product.id} className={`product_item_outer mx-auto ${ProductSLiderBarStyle.product_item_outer}`}>
+                  <Link href={`/product/${product.categories}/${product.id}`}>
+                      <div key={product.id} className={`pointer product_item p-5 ${ProductSLiderBarStyle.product_item}`}>
+                        <Image src={`/img/product/${product.img_url}`} width={500} height={500}/>
+                        <div className={`productDetail`}>  
+                          <h1 className={`h3`}>{product.productName}</h1>
+                          <p className={`text-primary fw-bold fs-4 text-center bg-warning mw-30`}>HKD {product.price.originalPrice}</p>
+                        </div>
+                      </div>
+                  </Link> 
+                </div>
             </SwiperSlide>  
             )
           })
