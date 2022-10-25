@@ -24,7 +24,7 @@ function ProductCanvas() {
                 {
                     ProductList.map((items,index)=>{
                         return(
-                             <div key={index} className={`productItem_wrapper w-100 d-flex flex-column align-items-end ${ProductCanvasStyle.productItem_wrapper}`} 
+                             <div key={index} className={`productItem_wrapper w-100 d-flex flex-column align-items-end default ${ProductCanvasStyle.productItem_wrapper}`} 
                                 style={{"--bk-color":`${items.color}`,"--productNum":`${index + 1}` }} 
                                 productimg={items.image_url} onMouseEnter={(e)=>{ImgChanged(index)}}
                             >

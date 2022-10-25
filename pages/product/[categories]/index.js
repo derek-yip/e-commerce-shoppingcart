@@ -1,23 +1,16 @@
 import React from 'react'
-import Image from 'next/image';
+import ProductSliderBar from '../../../public/component/ProductSliderBar/ProductSLiderBar';
+import Link from 'next/link';
 
 function categories({productList,categories}) {
   console.log({productList});
   return (
     <div className={`${categories}`}>
-      {
-        productList.map((product)=>{
-          return(
-            <div key={product.id}>
-                <h1>{product.productName}</h1>
-                <p>{product.product_detail}</p>
-                <h2>{product.categories}</h2>
-                <Image src={`/img/product/${product.img_url}`} width={500} height={500}/>
-                <Image src={`/img/product/logo/${product.producer.logo}`} width={200} height={200}/>              
-            </div>
-          )
-        })
-      }
+      <h1 className='display-1 ms-5'>{categories}</h1>  
+      <ProductSliderBar List={productList}/>
+      <Link href={'/product/categories'}>
+        <button className={`w-80 h-100`}> Back </button>
+      </Link>
     </div>
   )
 }

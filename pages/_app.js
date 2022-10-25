@@ -1,5 +1,6 @@
 import Layout from '../public/component/Layout'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import '../styles/scss/Slider/Slider.scss'
 import '../styles/globals.scss'
 import { useEffect } from 'react';
 

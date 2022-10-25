@@ -1,0 +1,20 @@
+.swiper {
+    padding-bottom: 2.2rem!important;
+    .swiper-button-next{
+        right:60px;
+        bottom: 20px;
+        top: auto;
+        z-index: 1;
+    }
+    .swiper-button-prev{
+        left: auto;
+        right:120px;
+        bottom: 20px;
+        top: auto;
+    }
+    .swiper-button-next,.swiper-button-prev{
+        background-color: rgb(210, 255, 162);
+        width: calc(var(--swiper-navigation-size)/ 44 * 40);
+        height: calc(var(--swiper-navigation-size) + 10px);
+    }
+  }

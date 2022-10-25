@@ -6,6 +6,7 @@ function categories({productList}) {
   return (
     <>
       <ProductSliderBar List={productList}/>
+      
     </>
   )
 }

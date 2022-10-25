@@ -1,21 +1,31 @@
-import { useRouter } from 'next/router'
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
+import ProductItemStyle from '../../../styles/scss/ProductItem.module.scss'
 
 function ProductItem({product}) {
   console.log(product);
   return (
-    <div className={`w-100`}>
+    <div className={``}>
       {
         product.map((details)=>{
           return(
-            <div key={details.id} className={`d-flex flex-column justify-content-center align-items-center mw-60`}>
-                <Image src={`/img/product/${details.img_url}`} width={500} height={500}/>
-                <Image src={`/img/product/logo/${details.producer.logo}`} width={200} height={200}/>              
-                <h1>{details.productName}</h1>
-                <p>{details.product_detail}</p>
-                <h2>{details.categories}</h2>
+            <div key={details.id} className={`product_wrapper d-flex bg-white border border-2 border-primary ${ProductItemStyle.product_wrapper}`}>
+              <div className={`product_img ${ProductItemStyle.product_img}`}>
+                <Image src={`/img/product/${details.img_url}`} layout={`fill`} objectFit={'cover'} priority />                
+              </div>
+              
+              <div className={`${ProductItemStyle.product_detail} d-flex flex-column align-items-center `}>
+                  <div className={`product_logo ${ProductItemStyle.product_logo}`}>
+                    <Image src={`/img/product/logo/${details.producer.logo}`} layout='fill' objectFit={'contain'} priority/>                                  
+                  </div>
+                  <div className={`border-top border-black ${ProductItemStyle.product_detail_inner}`}>  
+                    <h1 className='mb-5 w-75'>{details.productName}</h1>
+                    <p className='mb-5 text-justify'>{details.product_detail}</p>
+                  </div>
+                  <button className='w-75'>Add to Cart</button>
+              </div>
+              
             </div>
           )
         })

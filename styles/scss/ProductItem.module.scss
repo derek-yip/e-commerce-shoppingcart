@@ -1,0 +1,27 @@
+.product_wrapper{
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.product_img{
+    position: relative;
+    width: 100%;
+}
+.product_detail{
+    padding: 1rem;
+    position: relative;
+}
+
+.product_logo{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.product_detail_inner{
+    width: 80%;
+    padding-top: 2rem;
+    p{
+        text-align: justify;
+    }
+}
