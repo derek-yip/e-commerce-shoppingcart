@@ -4,19 +4,20 @@ import Image from 'next/image';
 function categories({productList,categories}) {
   console.log({productList});
   return (
-    <div>
-    {
-      productList.map((product)=>{
-        return(
-          <div key={product.id}>
-              <h1>{product.productName}</h1>
-              <p>{product.product_detail}</p>
-              <h2>{product.categories}</h2>
-              <Image src={`/img/product/${product.img_url}`} width={500} height={500}/>
-          </div>
-        )
-      })
-    }
+    <div className={`${categories}`}>
+      {
+        productList.map((product)=>{
+          return(
+            <div key={product.id}>
+                <h1>{product.productName}</h1>
+                <p>{product.product_detail}</p>
+                <h2>{product.categories}</h2>
+                <Image src={`/img/product/${product.img_url}`} width={500} height={500}/>
+                <Image src={`/img/product/logo/${product.producer.logo}`} width={200} height={200}/>              
+            </div>
+          )
+        })
+      }
     </div>
   )
 }

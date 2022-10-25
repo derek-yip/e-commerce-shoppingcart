@@ -9,6 +9,7 @@ html,body {
 a {
   color: black!important;
   text-decoration: none;
+  cursor: pointer;
   &:hover{
     cursor: pointer;
   }

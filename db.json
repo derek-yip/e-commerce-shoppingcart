@@ -4,13 +4,13 @@
         "id": "63566dba91f9f9e98e50b5c2",
         "productName": "Tostitos Variety Bite Sized Rounds Salsa Cups Nacho Cheese Cups, Chip and Dip Pack, 16 Count",
         "categories": "Food",
-        "product_detail": "productDetail",
+        "product_detail": "Variety pack includes: 8 bags of Tostitos Crispy Rounds Tortilla Chips, 4 cups of Tostitos Medium Salsa, and 4 cups of Tostitos Nacho Cheese Dip. Get your tortilla chips and queso fix with built-in portion control. Devour every last bit of dip with Tostitos Crispy Rounds",
         "price": {
             "originalPrice": 606,
             "discountPrice": 401
         },
         "producer": {
-            "name": "Vasquez Robbins",
+            "name": "Tostitos",
             "address": "219 Clymer Street - Bridgetown, Maryland, British Indian Ocean Territory.",
             "detail": "string",
             "phone": "+55 (83) 95952-4609",
@@ -29,7 +29,7 @@
             "discountPrice": 401
         },
         "producer": {
-            "name": "Vasquez Robbins",
+            "name": "Pop-tarts",
             "address": "219 Clymer Street - Bridgetown, Maryland, British Indian Ocean Territory.",
             "detail": "string",
             "phone": "+55 (83) 95952-4609",
@@ -109,7 +109,7 @@
             "address": "504 Applegate Court - Verdi, Pennsylvania, Niue.",
             "detail": "string",
             "phone": "+55 (83) 95360-5948",
-            "logo": "1602558.png"
+            "logo": "motts.logo.png"
         },
         "nation": "New Zealand",
         "img_url": "814DtzezQuL._SL1500_.jpg"
@@ -185,7 +185,7 @@
             "address": "534 Varick Street - Heil, Kentucky, Luxembourg.",
             "detail": "string",
             "phone": "+55 (83) 90408-7204",
-            "logo": "micro_logo.png"
+            "logo": "Micro Ingredients.png"
         },
         "nation": "New Zealand",
         "img_url": "71aU4Y6-BYL._AC_SL1366_.jpg"
