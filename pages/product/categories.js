@@ -3,11 +3,10 @@ import Image from 'next/image'
 import ProductSliderBar from '../../public/component/ProductSliderBar/ProductSliderBar'
 
 function categories({productList}) {
-  console.log(productList);
   return (
-    <div>
+    <>
       <ProductSliderBar List={productList}/>
-    </div>
+    </>
   )
 }
 
