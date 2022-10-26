@@ -6,7 +6,6 @@ function categories({productList,categories}) {
   console.log({productList});
   return (
     <div className={`${categories}`}>
-      <h1 className='display-1 ms-5'>{categories}</h1>  
       <ProductSliderBar List={productList}/>
       <Link href={'/product/categories'}>
         <button className={`w-80 h-100`}> Back </button>

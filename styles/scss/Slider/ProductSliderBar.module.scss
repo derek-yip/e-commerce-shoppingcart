@@ -36,3 +36,20 @@
         }
      }
 }
+
+.AddCartButton{
+    background-color: lemonchiffon;
+    padding: .2rem 0;
+    &:hover{
+        background-color: orange;
+    }
+}
+
+.categoriesTitle{
+    background-color: var(--primary);
+    margin-bottom: 1rem;
+    transition: .5s all ease-in-out;
+    &:hover{
+        background-color: var(--font-highlight);
+    }
+}

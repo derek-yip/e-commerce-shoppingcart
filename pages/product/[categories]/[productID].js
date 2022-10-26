@@ -6,7 +6,7 @@ import ProductItemStyle from '../../../styles/scss/ProductItem.module.scss'
 function ProductItem({product}) {
   console.log(product);
   return (
-    <div className={``}>
+    <div>
       {
         product.map((details)=>{
           return(
