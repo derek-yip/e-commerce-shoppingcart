@@ -9,7 +9,9 @@ function Header() {
         <ul className='col-lg-6 col-md-8 col-sm-12 px-10 d-flex mt-4 align-items-center justify-content-center fs-3'>
             <li className='mx-auto list-group-item'><Link href={'/'}><a>Home</a></Link></li>
             <li className='mx-auto list-group-item'><Link href={'/product'}><a>Product</a></Link></li>
-            <Link href={'/shoppingCart'}><a className={HeaderStyle.ShoppingIcon}><ShoppingCart/></a></Link>
+            <div className={`${HeaderStyle.ShoppingIcon}`}>              
+              <ShoppingCart/>
+            </div>
         </ul>
     </header>
   )

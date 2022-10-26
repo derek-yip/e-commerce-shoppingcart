@@ -7,7 +7,6 @@ function categories({productList,categoriesSet}) {
   return (
     <>
       <ProductSliderBar List={productList}/>
-      
     </>
   )
 }
@@ -24,7 +23,6 @@ export async function getServerSideProps(){
   return{
     props:{
       productList:data,
-      categoriesSet:['categoriesProps']
     }
   }
 

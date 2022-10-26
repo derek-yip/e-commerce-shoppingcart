@@ -1,0 +1,8 @@
+.AddCartButton{
+    background-color: lemonchiffon;
+    padding: .2rem 0;
+    z-index: 1;
+    &:hover{
+        background-color: orange;
+    }
+}

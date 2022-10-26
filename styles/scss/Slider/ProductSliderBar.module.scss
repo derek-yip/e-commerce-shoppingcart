@@ -1,20 +1,18 @@
 .product_item{
     transition: .3s all ease-in-out;
-    margin: auto 0;
     &:hover{
         background-color: rgb(214, 246, 246);
     }
 }
 
 .productDetail{
+    min-height: 280px;
     h1{
         font-size: 1.6rem;
-        height: 250px;
     }
     p{
         width: 50%;
         margin-right:auto;
-        margin-bottom: 20px;
     }
 
     @media (max-width: 1200px) { 
