@@ -9,7 +9,7 @@ export function useShoppingCart(){
 export function ShoppingCartProvider({children}){
     const [cartItem, setCartItem] = useState([])
     
-    const cartQuantity = cartItem.reduce((quantity,item) => item.quantity + quantity , 0)
+    const cartQuantity = cartItem.reduce((quantity , item) => item.quantity + quantity, 0) 
 
     function getItemQuantity(id) {
         return cartItem.find( item => item.id == id)?.quantity || 0
@@ -17,6 +17,7 @@ export function ShoppingCartProvider({children}){
 
     function AddCartQuantity(id) {
         setCartItem( CurrentItems =>{
+            console.log('CurrentItems：',CurrentItems);
             if (CurrentItems.find(item => item.id === id) == null) {
                 // If cart doesnt have the product with id
                 return [...CurrentItems, {id , quantity: 1 }]

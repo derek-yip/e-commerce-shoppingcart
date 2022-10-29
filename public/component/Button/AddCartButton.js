@@ -15,6 +15,7 @@ function AddCartButton(props) {
   } = useShoppingCart()
 
   const quantity = getItemQuantity(id)
+
   return (
     <>
     {
@@ -28,7 +29,7 @@ function AddCartButton(props) {
           <div className={`d-flex flex-grow-1 w-100 justify-content-evenly align-items-center fs-1`} style={{gap:'.5rem'}}>  
             <button className='px-3' onClick={()=>DecreaseCartQuantity(id)}>-</button>
             <p>{quantity}</p>
-            <button className='px-3' onClick={()=>AddCartQuantity(id)}>+</button>
+            <button className='px-3' onClick={()=>{console.log(AddCartQuantity(id))}}>+</button>
           </div>
           <button className={`bg-danger p-2 w-100`} onClick={()=>RemoveFromCart(id)}>Remove</button>   
         </div>

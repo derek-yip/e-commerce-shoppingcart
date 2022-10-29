@@ -1,0 +1,23 @@
+.CartIcon{
+    svg{
+        height: 4rem;
+        width: 4rem;
+        margin-right: 1rem;
+    }
+}
+
+.cartQuantityCircle{
+    text-align: center;
+    color: whitesmoke;
+    background-color: red;
+    position:absolute;
+    bottom: -.5rem;
+    right: 1rem;
+    padding: 2px;
+    border: 2px solid red;
+    content: '';
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size:1.2rem;
+}
