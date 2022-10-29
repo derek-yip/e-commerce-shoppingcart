@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/scss/Slider/Slider.scss'
 import '../styles/globals.scss'
 import { useEffect } from 'react';
+import { ShoppingCartProvider } from '../context/ShoppingCartContext';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -10,9 +11,11 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ShoppingCartProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ShoppingCartProvider>
   )
 }
 
