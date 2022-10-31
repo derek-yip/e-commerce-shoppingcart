@@ -3,12 +3,17 @@ import React from 'react'
 import Image from 'next/image'
 import ProductSliderBarStyle from '../../../styles/scss/Slider/ProductSliderBar.module.scss'
 import AddCartButton from '../Button/AddCartButton';
+import { useShoppingCart } from '../../context/ShoppingCartContext';
 
 function ProductItem(props) {
     
     const {
-        product = props.product
+      product = props.product
     } = props
+
+    const {getItemQuantity} = useShoppingCart()
+  
+    const quantity = getItemQuantity(product.id)
 
   return (
     <>
@@ -26,7 +31,7 @@ function ProductItem(props) {
             </div>
         </Link>
 
-        <AddCartButton id={product.id}/>                              
+        <AddCartButton id={product.id} quantity={quantity} price={product.price.discountPrice}/>                              
     </>
   )
 }

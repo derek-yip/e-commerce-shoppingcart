@@ -2,9 +2,17 @@ import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import ProductItemStyle from '../../../styles/scss/ProductItem.module.scss'
+import AddCartButton from '../../../public/component/Button/AddCartButton';
+import { useShoppingCart } from '../../../public/context/ShoppingCartContext';
 
-function ProductItem({product}) {
-  console.log(product);
+function Product({product}) {
+  const {
+    getItemQuantity,
+  } = useShoppingCart()
+  const id = product[0].id
+  const quantity = getItemQuantity(id)
+  const price = product[0].price.discountPrice
+
   return (
     <div>
       {
@@ -23,7 +31,7 @@ function ProductItem({product}) {
                     <h1 className='mb-5 w-75'>{details.productName}</h1>
                     <p className='mb-5 text-justify'>{details.product_detail}</p>
                   </div>
-                  <button className='w-75'>Add to Cart</button>
+                <AddCartButton id={id} quantity={quantity} price={price}/>
               </div>
               
             </div>
@@ -37,7 +45,7 @@ function ProductItem({product}) {
   )
 }
 
-export default ProductItem
+export default Product
 
 export async function getServerSideProps(context){
   const { params } = context

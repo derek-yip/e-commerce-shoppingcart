@@ -21,3 +21,13 @@
     height: 35px;
     font-size:1.2rem;
 }
+
+.ShoppingIcon{
+    svg{
+        color: var(--font-color)!important;
+        transition: .5s all ease-in-out;
+        &:hover{
+            color: var(--font-highlight)!important;
+        }
+    }
+}
