@@ -7,7 +7,7 @@ function AddCartButton(props) {
     id = props.id,
     quantity=props.quantity,
     price = props.price
-} = props
+  } = props
 
   const {
     AddCartQuantity,
@@ -18,12 +18,12 @@ function AddCartButton(props) {
   } = useShoppingCart()
 
   return (
-    <>
+    <div>
     {
       quantity===0?
         <div className={`pointer AddCartButton w-100 text-center fw-normal fs-2 text-uppercase border border-dark rounded ${AddCartButtonStyle.AddCartButton}`}
         onClick={()=>{AddCartQuantity(id); AddCartTotal(price);}}>
-            Add To Cart
+          <p>Add to Cart</p>
         </div>
       :
         <div className={`d-flex align-items-center flex-column w-100`} style={{gap:'.5rem', transition:'none'}}>
@@ -35,7 +35,7 @@ function AddCartButton(props) {
           <button className={`bg-danger text-white p-2 w-100`} onClick={()=>{RemoveFromCart(id); DecreaseCartTotal(price * quantity)}}>Remove</button>   
         </div>
     }
-    </>
+    </div>
   )
   
 }

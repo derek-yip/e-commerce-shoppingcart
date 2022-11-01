@@ -5,7 +5,7 @@ import Slider from '../../public/component/Slider'
 
 function Product() {
   return (
-    <>
+    <div>
       <Slider 
         interval={'4000'}
         ImgList={[
@@ -28,7 +28,7 @@ function Product() {
 
       <ProductCanvas />
       <CategoriesCanvas/>
-    </>
+    </div>
   )
 }
 

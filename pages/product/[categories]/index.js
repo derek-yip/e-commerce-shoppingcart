@@ -7,9 +7,9 @@ function categories({productList,categories}) {
   return (
     <div className={`${categories}`}>
       <ProductSliderBar List={productList}/>
-      <Link href={'/product/categories'}>
-        <button className={`w-80 h-100`}> Back </button>
-      </Link>
+      
+      <button className={`w-80 h-100`}><Link href={'/product/categories'}> Back </Link></button>
+      
     </div>
   )
 }

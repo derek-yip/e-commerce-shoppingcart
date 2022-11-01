@@ -9,12 +9,12 @@ function ShoppingCart() {
 
   return (
     <div className={`ShoppingCart`}>
-      <button className={`border border-0 bg-transparent position-relative`} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+      <div className={`border border-0 bg-transparent position-relative`} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
         <div className={` ${ShoppingCartStyle.CartIcon}`}><HiShoppingBag/></div>
         <div className={`d-flex align-items-center justify-content-center ${ShoppingCartStyle.cartQuantityCircle}`}>
           <p>{cartQuantity}</p>
         </div>
-      </button>
+      </div>
     </div>
   )
 }

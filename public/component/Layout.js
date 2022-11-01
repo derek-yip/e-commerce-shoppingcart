@@ -5,7 +5,7 @@ import Head from 'next/head';
 
 export default function Layout({ children }) {
   return (
-    <>
+    <div>
       <Head>
         <title>E-commerce</title>
       </Head>
@@ -13,6 +13,6 @@ export default function Layout({ children }) {
       <Header />
         <main>{children}</main>
       <Footer />
-    </>
+    </div>
   )
 }

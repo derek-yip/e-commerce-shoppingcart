@@ -9,6 +9,7 @@ function Product({product}) {
   const {
     getItemQuantity,
   } = useShoppingCart()
+  
   const id = product[0].id
   const quantity = getItemQuantity(id)
   const price = product[0].price.discountPrice

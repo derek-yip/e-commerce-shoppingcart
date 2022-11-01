@@ -4,9 +4,9 @@ import ProductSliderBar from '../../public/component/ProductSliderBar/ProductSli
 
 function categories({productList,categoriesSet}) {
   return (
-    <>
+    <div>
       <ProductSliderBar List={productList}/>
-    </>
+    </div>
   )
 }
 

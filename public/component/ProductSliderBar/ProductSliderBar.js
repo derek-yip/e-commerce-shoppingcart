@@ -24,7 +24,7 @@ function ProductSliderBar(props) {
   const categoriesArry = Array.from(categoriesSet)
 
   return (
-    <>
+    <div>
     {
       categoriesArry.map((category,index)=>{
         return(
@@ -47,15 +47,15 @@ function ProductSliderBar(props) {
             >
               {
                 List.map((product)=>{
-                  if (product.categories == category) {
-                    return(
-                      <SwiperSlide key={product.id}>
-                        <div className={`mb-5 py-4 px-5 ${ProductSliderBarStyle.product_item}`}>
+                  return(
+                    product.categories == category?
+                        <SwiperSlide key={product.id}>
+                          <div className={`mb-5 py-4 px-5 ${ProductSliderBarStyle.product_item}`}>
                             <ProductItem product={product}/>
-                        </div>
-                      </SwiperSlide>  
-                    )
-                  }
+                          </div>
+                        </SwiperSlide>  
+                    :''
+                  )
                 })
               }
           </Swiper>
@@ -63,7 +63,7 @@ function ProductSliderBar(props) {
         )
       })
     }
-  </>
+  </div>
   )
 }
 

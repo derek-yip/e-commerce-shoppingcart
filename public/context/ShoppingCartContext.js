@@ -1,6 +1,6 @@
-import { createContext, useContext, useState } from "react";
-import { useLocalStorage } from "../../Hook/useLocalStorage";
+import { createContext, useContext, useEffect } from "react";
 import ShoppingCartOffCanvas from "../component/ShoppingCart/ShoppingCartOffCanvas";
+import { useCookie } from "../../Hook/useCookie";
 
 const ShoppingCartContext = createContext({})
 
@@ -9,9 +9,11 @@ export function useShoppingCart(){
 }
 
 export function ShoppingCartProvider({children}){
-    const [cartItem, setCartItem] = useState([])
-    const [cartTotal, setCartTotal] = useState(0);
-    // const [cartTotal, setCartTotal] = useLocalStorage("total", 0)
+    
+    const [cartItem, setCartItem] = useCookie("cart",[])
+    // const [cartItem, setCartItem] = useState([])
+    // const [cartTotal, setCartTotal] = useState(0);
+    const [cartTotal, setCartTotal] = useCookie("total", 0)
     
     const cartQuantity = cartItem.reduce(
         (quantity , item) => quantity + item.quantity 

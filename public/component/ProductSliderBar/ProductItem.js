@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import Image from 'next/image'
 import ProductSliderBarStyle from '../../../styles/scss/Slider/ProductSliderBar.module.scss'
 import AddCartButton from '../Button/AddCartButton';
@@ -11,12 +11,19 @@ function ProductItem(props) {
       product = props.product
     } = props
 
-    const {getItemQuantity} = useShoppingCart()
-  
-    const quantity = getItemQuantity(product.id)
+    const {
+      getItemQuantity,
+      cartItem,
+      cartQuantity} = useShoppingCart()
+    
+    const [quantity,setQuanity] = useState()
+
+    useEffect(() => {      
+      setQuanity(getItemQuantity(product.id)) 
+    }, [cartQuantity]);
 
   return (
-    <>
+    <div>
         <Link href={`/product/${product.categories}/${product.id}`}>
             <div className='d-flex flex-column flex-grow-1'>
               <div key={product.id} className={`pointer product_item d-flex flex-column justify-content-evenly`}>
@@ -32,7 +39,7 @@ function ProductItem(props) {
         </Link>
 
         <AddCartButton id={product.id} quantity={quantity} price={product.price.discountPrice}/>                              
-    </>
+    </div>
   )
 }
 
