@@ -3,7 +3,7 @@ import ProductSliderBarStyle from '../../../styles/scss/Slider/ProductSliderBar.
 import ProductItem from './ProductItem';
 import Link from 'next/link';
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';

@@ -19,9 +19,16 @@ function ShoppingCartOffCanvas() {
             )
           })
         }
-        <div className={`bg-primary w-100 h-25 d-flex flex-column align-items-center justify-content-center p-3 text-white`}>
-          <h1>Total : {cartTotal}</h1>
-        </div>
+        {
+          cartTotal!=0?
+            <div className={`bg-primary w-100 d-flex flex-column align-items-center justify-content-center p-3 text-white`}>
+              <h1>Total : {cartTotal}</h1>
+            </div>
+          :
+          <div className={`w-100 h-100 h-25 d-flex align-items-center justify-content-center p-3`}>
+            <h2 className='fw-bold'> There is nothing in Cart</h2>
+          </div>
+        }
     </div>
   </div>
   )
