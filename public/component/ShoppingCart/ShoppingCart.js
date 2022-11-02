@@ -2,6 +2,7 @@ import React from 'react'
 import {HiShoppingBag} from 'react-icons/hi'
 import { useShoppingCart } from '../../context/ShoppingCartContext'
 import ShoppingCartStyle from '../../../styles/scss/ShoppingCart.module.scss'
+import dynamic from 'next/dynamic' 
 
 function ShoppingCart() {
 
@@ -19,4 +20,4 @@ function ShoppingCart() {
   )
 }
 
-export default ShoppingCart
+export default dynamic(()=>Promise.resolve(ShoppingCart), {ssr:false})

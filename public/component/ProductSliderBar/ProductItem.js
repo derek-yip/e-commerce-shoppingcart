@@ -4,6 +4,7 @@ import Image from 'next/image'
 import ProductSliderBarStyle from '../../../styles/scss/Slider/ProductSliderBar.module.scss'
 import AddCartButton from '../Button/AddCartButton';
 import { useShoppingCart } from '../../context/ShoppingCartContext';
+import dynamic from 'next/dynamic';
 
 function ProductItem(props) {
     
@@ -11,16 +12,8 @@ function ProductItem(props) {
       product = props.product
     } = props
 
-    const {
-      getItemQuantity,
-      cartItem,
-      cartQuantity} = useShoppingCart()
-    
-    const [quantity,setQuanity] = useState()
-
-    useEffect(() => {      
-      setQuanity(getItemQuantity(product.id)) 
-    }, [cartQuantity]);
+    const {getItemQuantity} = useShoppingCart()
+    const quantity= getItemQuantity(product.id)
 
   return (
     <div>
@@ -43,4 +36,4 @@ function ProductItem(props) {
   )
 }
 
-export default ProductItem
+export default dynamic(()=>Promise.resolve(ProductItem), {ssr:false})

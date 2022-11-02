@@ -1,20 +1,10 @@
 import React, {useEffect, useState}from 'react'
 import { useShoppingCart } from '../../context/ShoppingCartContext'
 import CartItem from './CartItem'
+import dynamic from 'next/dynamic'
 
 function ShoppingCartOffCanvas() {
   const {cartItem,cartTotal} = useShoppingCart()
-
-  const [total,setTotal] = useState()
-  const [CI,setCI] = useState([])
-
-  useEffect(() => {      
-    setTotal(cartTotal)
-  }, [cartTotal]);
-
-  useEffect(() => {      
-    setCI(cartItem)
-  }, [cartItem]);
 
   return (
     <div className="offcanvas offcanvas-end" data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -24,7 +14,7 @@ function ShoppingCartOffCanvas() {
     </div>
     <div className="offcanvas-body position-relative">
       {
-        CI.map((items)=>{
+        cartItem.map((items)=>{
           return(
             <CartItem key={items.id} {...items}/>
             )
@@ -32,7 +22,7 @@ function ShoppingCartOffCanvas() {
       }
 
       {
-      total!=0?  
+      cartTotal!=0?  
         <div className={`bg-primary w-100 d-flex flex-column align-items-center justify-content-center p-3 text-white`}>
             <h1>Total : {cartTotal}</h1>
         </div>
@@ -48,4 +38,4 @@ function ShoppingCartOffCanvas() {
   )
 }
 
-export default ShoppingCartOffCanvas
+export default dynamic(()=>Promise.resolve(ShoppingCartOffCanvas), {ssr:false})
