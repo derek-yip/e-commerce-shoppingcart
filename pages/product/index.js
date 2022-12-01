@@ -9,10 +9,10 @@ function Product() {
       <Slider 
         interval={'4000'}
         ImgList={[
-        '/img/Slider/SliderImg_01.jpg',
-        '/img/Slider/SliderImg_02.jpg',
-        '/img/Slider/SliderImg_03.jpg',
-        '/img/Slider/SliderImg_04.jpg']}
+        '/img/Slider/SliderImg_05.jpg',
+        '/img/Slider/SliderImg_06.jpg',
+        '/img/Slider/SliderImg_07.jpg',
+        '/img/Slider/SliderImg_08.jpg']}
       />
 
       <section className={`d-flex flex-column px-5 py-5 col-lg-11`}>

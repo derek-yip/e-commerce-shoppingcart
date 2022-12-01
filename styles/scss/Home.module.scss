@@ -1,36 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 
+.section_cover{
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  width:  calc(100vw * var(--section_num));
+  transition: none;
+}
 
 .section {
-  align-items: center;
+  position: relative;
   background: url('https://images.unsplash.com/photo-1485123263479-f5ea30a2f92d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80');
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   background-size: cover ;
-  background-position: center;
-  background-attachment: fixed;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
+  // background-position: center;
+  // background-attachment: fixed;
+  display: grid;
+  // flex-wrap:nowrap;
+  place-items: center;
+  width: 100vw;
   height: 100vh;
-  padding: 1rem;
-  position: sticky;
-  width: 100%;
-  z-index: 4;
 }
 
 .section:nth-child(2) {
   background-image: url('https://images.unsplash.com/photo-1571413666114-1e5d1f2bad15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80');
-	z-index: 3;
 }
 
 .section:nth-child(3) {
   background-image: url('https://images.unsplash.com/photo-1552224647-b3a8f931b3b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
-	z-index: 2;
 }
 
-.section:last-child {
+.section:nth-child(4) {
   background-image: url('https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
-  z-index: 1;
 }
 
 .title {
@@ -49,4 +50,63 @@
       -1px  1px 0 #000,
        1px  1px 0 #000;
   }
+}
+
+.firstContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.lastContainer {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  background: yellow;
+}
+  
+.sideImage_left { 
+  grid-area: 1 / 1 / 6 / 2;
+  height: 100%; 
+}
+.mainSection { 
+  position: relative;
+  grid-area: 1 / 2 / 6 / 5; 
+  h1{
+    font-size: 150px;
+  }
+}
+.goToBuyButton{
+  height: 100px;
+  border-radius: 25px;
+  border: 0.5px solid black;
+}
+.sideImage_right { 
+  grid-area: 1 / 5 / 6 / 6; 
+  height: 100%; 
+}
+
+.imageCover:nth-child(1){
+  position: relative;
+}
+
+.imageCover:nth-child(2){
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+}
+
+.imageCover:nth-child(3){
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+}
+.imageCover:nth-child(4){
+  margin-top: auto;
 }

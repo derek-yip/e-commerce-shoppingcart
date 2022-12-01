@@ -11,8 +11,6 @@ export function useShoppingCart(){
 export function ShoppingCartProvider({children}){
     
     const [cartItem, setCartItem] = useCookie("cart",[])
-    // const [cartItem, setCartItem] = useState([])
-    // const [cartTotal, setCartTotal] = useState(0);
     const [cartTotal, setCartTotal] = useCookie("total", 0)
     
     const cartQuantity = cartItem.reduce(

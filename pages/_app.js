@@ -5,6 +5,7 @@ import '../styles/globals.scss';
 import { useEffect } from 'react';
 import { ShoppingCartProvider } from '../public/context/ShoppingCartContext';
 
+
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     require('bootstrap/dist/js/bootstrap.bundle.min.js');

@@ -11,14 +11,16 @@ function Slider(props) {
                 if (index==0) {
                   return(
                     <div className="carousel-item active" key={index}>
-                      <Image src={img} className="d-block w-100 h-100" alt="..." width={'2000'} height={'1000'} layout='intrinsic'/>
+                      <div className='position-relatve w-100 h-100'>                        
+                        <Image src={img} className="d-block w-100 h-100" alt="..." width={'2000'} height={'1000'} layout={`fixed`} objectFit={`cover`}/>
+                      </div>
                     </div>
                   )
                 }
                 else{
                   return(
                     <div className="carousel-item" key={index}>
-                      <Image src={img} className="d-block w-100 h-100" alt="..." width={'2000'} height={'1000'} layout="intrinsic"/>
+                      <Image src={img} className="d-block w-100 h-100" alt="..." width={'2000'} height={'1000'} layout={`fixed`} objectFit={`cover`}/>
                     </div>
                   )
                 }

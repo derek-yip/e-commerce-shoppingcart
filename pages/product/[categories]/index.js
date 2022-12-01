@@ -3,7 +3,6 @@ import ProductSliderBar from '../../../public/component/ProductSliderBar/Product
 import Link from 'next/link';
 
 function categories({productList,categories}) {
-  console.log({productList});
   return (
     <div className={`${categories}`}>
       <ProductSliderBar List={productList}/>
