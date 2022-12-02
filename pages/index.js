@@ -5,10 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
-  const scrollRef = useRef();
-  
+  useGsap();
   useEffect(() => {
-    useGsap();
     const section_num = document.querySelectorAll('.section').length;
     const section_cover = document.querySelector('.section_cover');
     section_cover.setAttribute('style',`--section_num:${section_num}`);
@@ -16,7 +14,7 @@ export default function Home() {
   
 
   return (
-    <div ref={scrollRef}>
+    <div >
       <div className={`firstContainer ${HomeStyle.firstContainer}`} >
         <div className={`${HomeStyle.sideImage_left}`}>
           <div className={`imageCover`}>  
@@ -53,7 +51,7 @@ export default function Home() {
                 <h3>
                   Brand
                 </h3>
-                <p>Large selection of Women's and men's health, snack at E-commerce shop!! Don't hesitate and crazy buying!!</p>
+                <p>Large selection of Women&apos;s and men&apos;s health, snack at E-commerce shop!! Don&apos;t hesitate and crazy buying!!</p>
               </div>
               <h1 className={`w-50`}>SHINING</h1>
             </div>

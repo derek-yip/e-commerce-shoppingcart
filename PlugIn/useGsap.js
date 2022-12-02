@@ -1,7 +1,9 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import { useEffect } from 'react';
 
 function useGsap() {
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     let section_cover = document.querySelector(".section_cover")
     let sections = document.querySelectorAll(".section");
@@ -20,6 +22,8 @@ function useGsap() {
         end:() => `+=${section_cover.offsetWidth}`,
       }
     });
+    
+  }, []);
 }
 
 export default useGsap
