@@ -13,7 +13,7 @@ function CartItem({id,quantity}) {
         <div className='border-info border-bottom pb-3 d-flex flex-column align-items-center'>
             <div className="hstack gap-3 m-2">
                 <div className={`position-relative d-flex align-items-center`} style={{height:"75px",width:"125px"}}>
-                    <Image src={`/img/product/${item.img_url}`} width={100} height={125} layout={`fixed`} objectFit={`cover`} />
+                    <Image src={`/img/product/${item.img_url}`} alt={``} width={100} height={125} layout={`fixed`} objectFit={`cover`} />
                 </div>
                 <div className={`d-flex flex-column w-50`}>
                     <p>{item.productName}</p>

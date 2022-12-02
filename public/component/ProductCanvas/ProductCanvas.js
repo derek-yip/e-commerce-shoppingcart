@@ -39,7 +39,7 @@ function ProductCanvas() {
                     <Link href={'/product/categories'}>
                         <a className={`d-flex justify-content-end align-items-center ${ProductCanvasStyle.arrowCover}`}>
                             <span className='h2 me-3 fw-light'>View More</span>
-                            <Image src={'/img/components/button/iconmonstr-arrow-right.png'} width={50} height={50} />
+                            <Image src={'/img/components/button/iconmonstr-arrow-right.png'} alt={``} width={50} height={50} />
                         </a>
                     </Link>
                 </div>

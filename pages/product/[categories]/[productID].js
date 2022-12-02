@@ -21,12 +21,12 @@ function Product({product}) {
           return(
             <div key={details.id} className={`product_wrapper d-flex bg-white border border-2 border-primary ${ProductItemStyle.product_wrapper}`}>
               <div className={`product_img ${ProductItemStyle.product_img}`}>
-                <Image src={`/img/product/${details.img_url}`} layout={`fill`} objectFit={'cover'} priority />                
+                <Image src={`/img/product/${details.img_url}`} alt={``} layout={`fill`} objectFit={'cover'} priority />                
               </div>
               
               <div className={`${ProductItemStyle.product_detail} d-flex flex-column align-items-center `}>
                   <div className={`product_logo ${ProductItemStyle.product_logo}`}>
-                    <Image src={`/img/product/logo/${details.producer.logo}`} layout='fill' objectFit={'contain'} priority/>                                  
+                    <Image src={`/img/product/logo/${details.producer.logo}`} alt={``} layout='fill' objectFit={'contain'} priority/>                                  
                   </div>
                   <div className={`border-top border-black ${ProductItemStyle.product_detail_inner}`}>  
                     <h1 className='mb-5 w-75'>{details.productName}</h1>

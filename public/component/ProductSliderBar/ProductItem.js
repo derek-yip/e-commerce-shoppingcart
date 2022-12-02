@@ -21,7 +21,7 @@ function ProductItem(props) {
             <div className='d-flex flex-column flex-grow-1'>
               <div key={product.id} className={`pointer product_item d-flex flex-column justify-content-evenly`}>
                 <div className={`position-relative w-100`} style={{height:'300px'}}>                                  
-                  <Image src={`/img/product/${product.img_url}`} layout={`fill`} objectFit={`contain`} priority/>
+                  <Image src={`/img/product/${product.img_url}`} alt={``} layout={`fill`} objectFit={`contain`} priority/>
                 </div>
                 <div className={`productDetail mb-4 d-flex flex-column justify-content-evenly ${ProductSliderBarStyle.productDetail}`}>  
                   <h1 >{product.productName}</h1>
