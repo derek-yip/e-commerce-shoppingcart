@@ -1,5 +1,6 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+
 function useGsap() {
     gsap.registerPlugin(ScrollTrigger);
     let section_cover = document.querySelector(".section_cover")
@@ -19,15 +20,6 @@ function useGsap() {
         end:() => `+=${section_cover.offsetWidth}`,
       }
     });
-    
-    // section_cover.addEventListener('mouseenter',()=>{
-    //   gsap_section.enable;
-    //   console.log(gsap_section);
-    // });
-    // section_cover.addEventListener('mouseleave',()=>{
-    //   gsap_section.disable;
-    //   console.log(gsap_section);
-    // });
 }
 
 export default useGsap

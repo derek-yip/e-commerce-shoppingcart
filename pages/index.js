@@ -6,16 +6,8 @@ import Link from 'next/link';
 
 export default function Home() {
   const scrollRef = useRef();
-
+  
   useEffect(() => {
-    // const scroll = import("locomotive-scroll").then((LocomotiveScroll) => {
-    //   new LocomotiveScroll.default({
-    //     el: scrollRef.current,
-    //     smooth: true,
-    //     // direction: 'vertical'
-    //   });
-    // });
-    // return () => scroll.destroy();
     useGsap();
     const section_num = document.querySelectorAll('.section').length;
     const section_cover = document.querySelector('.section_cover');
@@ -29,19 +21,19 @@ export default function Home() {
         <div className={`${HomeStyle.sideImage_left}`}>
           <div className={`imageCover`}>  
             <div className={`postion-relative`}>
-              <Image src={`/../public/img/HomePage/Online shopping _Monochromatic.png`} height={`500`} width={`500`} objectFit={`contain`}></Image>
+              <Image src={`/img/HomePage/Online shopping _Monochromatic.png`} height={`500`} width={`500`} objectFit={`contain`}></Image>
             </div>
           </div>
         </div>
         <div className={`${HomeStyle.mainSection}`}>
           <div className={`imageCover ${HomeStyle.imageCover}`}>  
             <div className={`postion-relative`}>
-              <Image src={`/../public/img/HomePage/Statue of liberty_Monochromatic.png`} height={`400`} width={`400`} objectFit={`contain`}></Image>
+              <Image src={`/img/HomePage/Statue of liberty_Monochromatic.png`} height={`400`} width={`400`} objectFit={`contain`}></Image>
             </div>
           </div>
           <div className={`imageCover ${HomeStyle.imageCover}`}>  
             <div className={`postion-relative`}>
-              <Image src={`/../public/img/HomePage/Online store _Monochromatic.png`} height={`300`} width={`300`} objectFit={`contain`}></Image>
+              <Image src={`/img/HomePage/Online store _Monochromatic.png`} height={`300`} width={`300`} objectFit={`contain`}></Image>
             </div>
           </div>
           <div className={`sectionContent ${HomeStyle.sectionContent}`}>
@@ -70,7 +62,7 @@ export default function Home() {
         <div className={`${HomeStyle.sideImage_right}`}>
           <div className={`imageCover`}>  
             <div className={`postion-relative p-2`}>
-              <Image src={`/../public/img/HomePage/Online shopping _Isometric.png`} height={`500`} width={`500`} objectFit={`contain`}></Image>
+              <Image src={`/img/HomePage/Online shopping _Isometric.png`} height={`500`} width={`500`} objectFit={`contain`}></Image>
             </div>
           </div>
         </div>
