@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "build-server": "json-server --port 4000",
     "view-server": "json-server --watch db.json --port 4000",
     "open-browser": "npm run open-db & start http://localhost:3000 & npm run dev",
     "open-db": "start http://localhost:4000/ProductList & npm run view-server"
