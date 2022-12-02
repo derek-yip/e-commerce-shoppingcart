@@ -12,7 +12,7 @@ function Slider(props) {
                   return(
                     <div className="carousel-item active" key={index}>
                       <div className='position-relatve w-100 h-100'>                        
-                        <Image src={img} className="d-block w-100 h-100" alt="..." width={'2000'} height={'1000'} layout={`fixed`} objectFit={`cover`}/>
+                        <Image src={img} className="d-block w-100 h-100" alt="..." width={'2000'} height={'1000'} layout={`responsive`} objectFit={`cover`}/>
                       </div>
                     </div>
                   )
@@ -20,7 +20,7 @@ function Slider(props) {
                 else{
                   return(
                     <div className="carousel-item" key={index}>
-                      <Image src={img} className="d-block w-100 h-100" alt="..." width={'2000'} height={'1000'} layout={`fixed`} objectFit={`cover`}/>
+                      <Image src={img} className="d-block w-100 h-100" alt="..." width={'2000'} height={'1000'} layout={`responsive`} objectFit={`fill`}/>
                     </div>
                   )
                 }
