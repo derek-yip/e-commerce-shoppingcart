@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductSliderBar from './component/ProductSliderBar/ProductSliderBar';
+import ProductSliderBar from '../../../public/component/ProductSliderBar/ProductSliderBar';
 import Link from 'next/link';
 
 function categories({ productList, categories }) {
