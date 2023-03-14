@@ -3,10 +3,14 @@ import useGsap from '../PlugIn/useGsap';
 import HomeStyle from '../styles/scss/Home.module.scss'
 import Image from 'next/image';
 import Link from 'next/link';
+import { useShoppingCart } from '../public/context/ShoppingCartContext';
 
-export default function Home() {
+export default function Home(ProductData) {
+  const {setProductData} = useShoppingCart();
+
   useGsap();
   useEffect(() => {
+    setProductData(ProductData.ProductData);
     const section_num = document.querySelectorAll('.section').length;
     const section_cover = document.querySelector('.section_cover');
     section_cover.setAttribute('style',`--section_num:${section_num}`);
@@ -47,7 +51,7 @@ export default function Home() {
                 </Link>
             </div>
             <div className={`w-100 d-flex justify-content-evenly align-items-center`}>
-              <div className={`brand_script w-25 pe-5 ${HomeStyle.brand_script}`}>
+              <div className={`brand_script w-100 pe-5 ${HomeStyle.brand_script}`}>
                 <h3>
                   Brand
                 </h3>
@@ -84,4 +88,15 @@ export default function Home() {
       </div> */}
     </div>
   )
+}
+
+export async function getServerSideProps() {
+  const response = await fetch(`https://derekyip.site/api/products`);
+
+  const data = await response.json();
+  return {
+    props: {
+      ProductData: data,
+    },
+  };
 }

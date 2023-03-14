@@ -19,15 +19,22 @@ export default categories;
 export async function getServerSideProps(context) {
   const { params } = context;
   const { categories } = params;
-  const response = await fetch(
-    `http://localhost:4000/ProductList?categories=${categories}`
-  );
+  const response = await fetch(`https://derekyip.site/api/products/`);
+
+  const categories_array = [];
 
   const data = await response.json();
+  const ProductList = data.ProductList;
+
+  ProductList.forEach((product) => {
+    if (product.categories === categories) {
+      categories_array.push(product);
+    }
+  });
 
   return {
     props: {
-      productList: data,
+      productList: { ProductList: categories_array },
       categories,
     },
   };

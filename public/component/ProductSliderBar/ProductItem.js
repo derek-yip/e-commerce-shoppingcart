@@ -13,13 +13,13 @@ function ProductItem(props) {
     } = props
 
     const {getItemQuantity} = useShoppingCart()
-    const quantity= getItemQuantity(product.id)
+    const quantity= getItemQuantity(product._id)
 
   return (
     <div>
-        <Link href={`/product/${product.categories}/${product.id}`}>
+        <Link href={`/product/${product.categories}/${product._id}`}>
             <div className='d-flex flex-column flex-grow-1'>
-              <div key={product.id} className={`pointer product_item d-flex flex-column justify-content-evenly`}>
+              <div key={product._id} className={`pointer product_item d-flex flex-column justify-content-evenly`}>
                 <div className={`position-relative w-100`} style={{height:'300px'}}>                                  
                   <Image src={`/img/product/${product.img_url}`} alt={``} layout={`fill`} objectFit={`contain`} priority/>
                 </div>
@@ -31,7 +31,7 @@ function ProductItem(props) {
             </div>
         </Link>
 
-        <AddCartButton id={product.id} quantity={quantity} price={product.price.discountPrice}/>                              
+        <AddCartButton id={product._id} quantity={quantity} price={product.price.discountPrice}/>                              
     </div>
   )
 }

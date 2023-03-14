@@ -1,28 +1,26 @@
-import React from 'react'
-import Image from 'next/image'
-import ProductSliderBar from '../../public/component/ProductSliderBar/ProductSliderBar'
+import React, { useEffect } from 'react';
+import ProductSliderBar from '../../public/component/ProductSliderBar/ProductSliderBar';
+import { useShoppingCart } from '../../public/context/ShoppingCartContext';
 
-function categories({productList,categoriesSet}) {
+function categories({ data }) {
+  const { setProductdata } = useShoppingCart();
+  
   return (
     <div>
-      <ProductSliderBar List={productList}/>
+      <ProductSliderBar List={data} />
     </div>
-  )
+  );
 }
 
-export default categories
+export default categories;
 
-export async function getServerSideProps(){
-  const response = await fetch(
-    `http://localhost:4000/ProductList`
-  )
-  
-  const data = await response.json()
+export async function getServerSideProps() {
+  const response = await fetch(`https://derekyip.site/api/products`);
 
-  return{
-    props:{
-      productList:data,
-    }
-  }
-
+  const data = await response.json();
+  return {
+    props: {
+      data: data,
+    },
+  };
 }

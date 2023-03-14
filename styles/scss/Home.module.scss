@@ -37,7 +37,7 @@
 .title {
   color: var(--secondary-color);
   font-family: var(--Playfair);
-  font-size: 10rem;
+  font-size: max(100px,15vw);
   -webkit-text-stroke: 1px #000;
   cursor: default;
 }
@@ -68,18 +68,6 @@
   background: yellow;
 }
 
-.sideImage_left {
-  position: relative;
-  grid-area: 1 / 1 / 6 / 2;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  animation: image_animation 10s infinite backwards linear;
-  -webkit-animation: image_animation 10s infinite backwards linear;
-  -moz-animation: image_animation 10s infinite backwards linear;
-  -o-animation: image_animation 10s infinite backwards linear;
-}
 .mainSection {
   position: relative;
   display: flex;
@@ -87,14 +75,14 @@
   justify-content: center;
   grid-area: 1 / 2 / 6 / 5;
   h1 {
-    font-size: 130px;
+    font-size: max(30px,8vw);
   }
 }
 .goToBuyButton {
-  height: 100px;
+  height: max(20px,8vw);
   border-radius: 20px;
   border: 1px solid black;
-  font-size: 40px;
+  font-size: max(10px,2vw);
   text-transform: uppercase;
   background-color: var(--button-color);
   transition: 0.3s all ease-in-out;
@@ -106,13 +94,28 @@
       display: none;
     }
     &::before {
+      font-size: max(10px,2vw);
       content: 'VIEW MORE';
     }
   }
 }
+.sideImage_left {
+  position: relative;
+  grid-area: 1 / 1 / 6 / 2;
+  width: max(100px,15vw);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  animation: image_animation 10s infinite backwards linear;
+  -webkit-animation: image_animation 10s infinite backwards linear;
+  -moz-animation: image_animation 10s infinite backwards linear;
+  -o-animation: image_animation 10s infinite backwards linear;
+}
 .sideImage_right {
   position: relative;
   grid-area: 1 / 5 / 6 / 6;
+  width: max(100px,15vw);
   height: 100%;
   display: flex;
   justify-content: center;
@@ -127,8 +130,10 @@
 .imageCover:nth-child(1) {
   position: absolute;
   content: '';
+  width: max(150px,20vw);
+  height: max(150px,20vw);
   top: 0;
-  right: 150px;
+  right: max(20px,15vw);
   animation: image_animation 5s infinite forwards linear;
   -webkit-animation: image_animation 5s infinite forwards linear;
   -moz-animation: image_animation 5s infinite forwards linear;
@@ -138,6 +143,8 @@
 .imageCover:nth-child(2) {
   position: absolute;
   content: '';
+  width: max(150px,20vw);
+  height: max(150px,20vw);
   bottom: 0;
   left: -100px;
   animation: image_animation 8s infinite forwards linear;
@@ -148,9 +155,10 @@
 
 .brand_script {
   h3 {
-    font-size: 40px;
+    font-size: max(20px,3vw);
   }
   p {
+    font-size: max(5px,1vw);
     text-align: justify;
   }
 }
