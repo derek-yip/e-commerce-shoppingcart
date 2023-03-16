@@ -15,7 +15,7 @@ function ProductSliderBar(props) {
   const { List = props.List } = props;
 
   const categoriesSet = new Set();
-  
+
   if(List){
     const ProductList = List.ProductList;
     ProductList.forEach((product) => {
@@ -24,6 +24,14 @@ function ProductSliderBar(props) {
   };
 
   const categoriesArry = Array.from(categoriesSet);
+  
+  if (!List) {
+    return(
+      <div>
+        Loading
+      </div>
+    )
+  }
 
   return (
     <div>
