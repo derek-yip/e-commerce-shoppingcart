@@ -3,7 +3,6 @@ import ProductSliderBar from '../../public/component/ProductSliderBar/ProductSli
 import productData from "../../data.json";
 
 function categories() {
-  console.log(productData);
   return (
     <div>
       <ProductSliderBar List={productData} />

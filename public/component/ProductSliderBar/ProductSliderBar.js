@@ -15,11 +15,13 @@ function ProductSliderBar(props) {
   const { List = props.List } = props;
 
   const categoriesSet = new Set();
-  const ProductList = List.ProductList;
-
-  ProductList.forEach((product) => {
-    categoriesSet.add(product.categories);
-  });
+  
+  if(List){
+    const ProductList = List.ProductList;
+    ProductList.forEach((product) => {
+      categoriesSet.add(product.categories);
+    });
+  };
 
   const categoriesArry = Array.from(categoriesSet);
 
