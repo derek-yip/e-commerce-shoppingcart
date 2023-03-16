@@ -4,7 +4,8 @@ import CartItem from './CartItem'
 import dynamic from 'next/dynamic'
 
 function ShoppingCartOffCanvas() {
-  const {cartItem,cartTotal} = useShoppingCart()
+  const {cartItem,cartTotal} = useShoppingCart();
+  // console.log(cartItem);
   return (
     <div className="offcanvas offcanvas-end" data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
     <div className="offcanvas-header">

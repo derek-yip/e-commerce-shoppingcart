@@ -1,24 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ProductSliderBar from '../../public/component/ProductSliderBar/ProductSliderBar';
+import productData from "../../data.json";
 
-function categories({ data }) {
-  
+function categories() {
+  console.log(productData);
   return (
     <div>
-      <ProductSliderBar List={data} />
+      <ProductSliderBar List={productData} />
     </div>
   );
 }
 
 export default categories;
-
-export async function getServerSideProps() {
-  const response = await fetch(`https://derekyip.site/api/products`);
-
-  const data = await response.json();
-  return {
-    props: {
-      data: data,
-    },
-  };
-}

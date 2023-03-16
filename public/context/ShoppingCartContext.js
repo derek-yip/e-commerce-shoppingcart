@@ -9,6 +9,7 @@ export function useShoppingCart() {
 }
 
 export function ShoppingCartProvider({ children }) {
+
   const [cartItem, setCartItem] = useCookie('cart', []);
   const [cartTotal, setCartTotal] = useCookie('total', 0);
   const [productData, setProductdata] = useState(null);

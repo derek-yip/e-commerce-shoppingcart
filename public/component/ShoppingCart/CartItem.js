@@ -1,30 +1,16 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useShoppingCart } from '../../context/ShoppingCartContext';
+import productData from '../../../data.json';
 
 function CartItem({ id, quantity }) {
-  const { RemoveFromCart, DecreaseCartTotal, productData } = useShoppingCart();
-  const [CartItem, setCartItem] = useState();
-  const [loading,setLoading] = useState(true);
-
-  useEffect(() => {
-    if (productData) {
-      const ProductList = productData.ProductList;
-      const item = ProductList.find((item) => item._id === id);
-      
-      setCartItem((cart) => {
-        if (item == null) return null;
-        return item;
-      });
-      setLoading(false);
-    }
-  }, [productData]);
-
-  if (loading) {
-    return 
-    <div>
-      loading . . .  
-    </div>
+  const { RemoveFromCart, DecreaseCartTotal } = useShoppingCart();
+  const CartItem = productData.ProductList.find((item) => item._id === id);
+  if (CartItem == null) return null;
+ 
+  if (!productData) {
+    return;
+    <div>loading . . .</div>;
   }
 
   return (
