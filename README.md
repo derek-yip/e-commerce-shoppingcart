@@ -35,12 +35,12 @@ P.s Still have bugs to fix about data storage after refreshing
     - Bootstrap
     
 2. Backend (API/Server Hosting & NoSQL Database)
-  - MongooseDB
-  - Linode
-  - Nginx + PM2 + Certbot (SSL)
+    - MongooseDB
+    - Linode
+    - Nginx + PM2 + Certbot (SSL)
 
 3. Deployment
-  - Vercel
+    - Vercel
 
 ## Products' details and Images Credit by
 1. Amazon.com
