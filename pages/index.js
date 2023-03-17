@@ -6,8 +6,11 @@ import Link from 'next/link';
 import { useShoppingCart } from '../public/context/ShoppingCartContext';
 
 export default function Home(ProductData) {
+  const {setProductData} = useShoppingCart();
+  console.log(ProductData);
   useGsap();
   useEffect(() => {
+    setProductData(ProductData.ProductData);
     const section_num = document.querySelectorAll('.section').length;
     const section_cover = document.querySelector('.section_cover');
     section_cover.setAttribute('style', `--section_num:${section_num}`);
@@ -110,22 +113,18 @@ export default function Home(ProductData) {
           <h2 className={`title ${HomeStyle.title}`}>HEALTH</h2>
         </section>
       </div>
-      {/* <div className={`lastContainer ${HomeStyle.lastContainer}`}>
-        Last Container
-      </div> */}
     </div>
   );
 }
 
 export async function getServerSideProps() {
-  const fs = require('fs');
-  const response = await fetch(`https://derekyip.site/api/products`);
+  // const fs = require('fs');
+  const response = await fetch(`https://derekyip.site/api/products`, { next: { revalidate: 5 } });
 
   const data = await response.json();
-  fs.writeFileSync('data.json', JSON.stringify(data, null, 2), 
-  (err) => {
-    if (err) throw err;
-  });
+  // fs.writeFileSync('data.json', JSON.stringify(data, null, 2), (err) => {
+  //   if (err) throw err;
+  // });
 
   return {
     props: {

@@ -1,14 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useShoppingCart } from '../../context/ShoppingCartContext';
-import productData from '../../../data.json';
+// import productData from '../../../data.json';
 
 function CartItem({ id, quantity }) {
-  const { RemoveFromCart, DecreaseCartTotal } = useShoppingCart();
-  const CartItem = productData.ProductList.find((item) => item._id === id);
-  if (CartItem == null) return null;
- 
-  if (!productData) {
+  const { RemoveFromCart, DecreaseCartTotal, productData } = useShoppingCart();
+  const [CartItem, setCartItem] = useState();
+  useEffect(() => {
+    if (productData) {
+      const ProductList = productData.ProductList;
+      const item = ProductList.find((item) => item._id === id);
+
+      setCartItem((cart) => {
+        if (item == null) return null;
+        return item;
+      });
+    }
+  }, [productData]);
+
+  if (!CartItem) {
     return;
     <div>loading . . .</div>;
   }
