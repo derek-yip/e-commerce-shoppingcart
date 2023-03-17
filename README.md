@@ -1,6 +1,9 @@
 
 ## Introduction
 
+<p>
+This platform is a online shopping cart website, designed to provide custome with a wonderful e-commerce experience. It offers a user-friendly interface that allows you to effortlessly browse through our extensive collection of products, add items to your cart. Using both frontend and backend software or package to build up.
+</p>
 
 ## Getting Started
 
@@ -29,6 +32,7 @@ P.s Still have bugs to fix about data storage after refreshing
     - SCSS
     - Javascript
     - GSAP
+    - Bootstrap
     
 2. Backend (API/Server Hosting & NoSQL Database)
   - MongooseDB
@@ -38,3 +42,6 @@ P.s Still have bugs to fix about data storage after refreshing
 3. Deployment
   - Vercel
 
+## Products' details and Images Credit by
+1. Amazon.com
+2. Pexels
