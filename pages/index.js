@@ -6,8 +6,7 @@ import Link from 'next/link';
 import { useShoppingCart } from '../public/context/ShoppingCartContext';
 
 export default function Home(ProductData) {
-  const {setProductData} = useShoppingCart();
-  console.log(ProductData);
+  const { setProductData } = useShoppingCart();
   useGsap();
   useEffect(() => {
     setProductData(ProductData.ProductData);
@@ -59,21 +58,21 @@ export default function Home(ProductData) {
             <div>
               <h1>BUY THIS NOW</h1>
             </div>
-            <div className={`d-flex justify-content-center align-items-center`}>
-              <h1 className='w-75'>BECOME</h1>
+            <div className={`d-flex justify-content-between align-items-center`}>
+              <h1 className=''>BECOME</h1>
               <Link href={'/product'}>
                 <button
-                  className={`goToBuyButton ${HomeStyle.goToBuyButton} w-50`}
+                  className={`goToBuyButton ${HomeStyle.goToBuyButton} ps-3 pe-3`}
                 >
                   <span>GO TO BUY</span>
                 </button>
               </Link>
             </div>
             <div
-              className={`w-100 d-flex justify-content-evenly align-items-center`}
+              className={`w-100 d-flex flex-column-reverse flex-sm-row justify-content-evenly align-items-center`}
             >
               <div
-                className={`brand_script w-100 pe-5 ${HomeStyle.brand_script}`}
+                className={`brand_script w-100 pe-sm-5 ${HomeStyle.brand_script}`}
               >
                 <h3>Brand</h3>
                 <p>
@@ -81,7 +80,7 @@ export default function Home(ProductData) {
                   at E-commerce shop!! Don&apos;t hesitate and crazy buying!!
                 </p>
               </div>
-              <h1 className={`w-50`}>SHINING</h1>
+              <h1 className={`w-100 d-flex justify-content-end`}>SHINING</h1>
             </div>
           </div>
         </div>
@@ -119,8 +118,8 @@ export default function Home(ProductData) {
 
 export async function getServerSideProps() {
   // const fs = require('fs');
-  const response = await fetch(`https://derekyip.site/api/products`, { next: { revalidate: 5 } });
-
+  
+  const response = await fetch(`https://derekyip.site/api/products`);
   const data = await response.json();
   // fs.writeFileSync('data.json', JSON.stringify(data, null, 2), (err) => {
   //   if (err) throw err;

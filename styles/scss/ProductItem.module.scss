@@ -5,7 +5,9 @@
 
 .product_img{
     position: relative;
-    width: 100%;
+    width: max(200px,50vw);
+    height: max(200px,50vw);
+    margin:0 auto ;
 }
 .product_detail{
     padding: 1rem;
@@ -14,8 +16,8 @@
 
 .product_logo{
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: max(50px,20vw);
+    height: max(50px,20vw);
 }
 
 .product_detail_inner{

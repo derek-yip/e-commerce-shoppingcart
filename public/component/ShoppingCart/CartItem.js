@@ -5,7 +5,8 @@ import { useShoppingCart } from '../../context/ShoppingCartContext';
 
 function CartItem({ id, quantity }) {
   const { RemoveFromCart, DecreaseCartTotal, productData } = useShoppingCart();
-  const [CartItem, setCartItem] = useState();
+  const [CartItem, setCartItem] = useState(null);
+
   useEffect(() => {
     if (productData) {
       const ProductList = productData.ProductList;
@@ -18,9 +19,9 @@ function CartItem({ id, quantity }) {
     }
   }, [productData]);
 
+
   if (!CartItem) {
-    return;
-    <div>loading . . .</div>;
+    return <div>loading . . .</div>;
   }
 
   return (

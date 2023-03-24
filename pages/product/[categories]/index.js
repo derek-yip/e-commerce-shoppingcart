@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ProductSliderBar from '../../../public/component/ProductSliderBar/ProductSliderBar';
 import Link from 'next/link';
+import BackButtonStyle from '../../../styles/scss/Button/BackButton.module.scss'
+import { useShoppingCart } from '../../../public/context/ShoppingCartContext';
 
-function categories({ productList, categories }) {
+function categories({ productList, categories,ProductData }) {
+  const { setProductData } = useShoppingCart();
+  useEffect(() => {
+    setProductData(ProductData.ProductData);
+  }, []);
+
   return (
     <div className={`${categories}`}>
       <ProductSliderBar List={productList} />
 
-      <button className={`w-80 h-100`}>
-        <Link href={'/product/categories'}> Back </Link>
-      </button>
+      <Link href={'/product/categories'}>
+        <div className={`my-3 mx-5 p-2 pointer border border-dark rounded ${BackButtonStyle.BackButton}`}> Back </div>
+      </Link>
     </div>
   );
 }
@@ -36,6 +43,7 @@ export async function getServerSideProps(context) {
     props: {
       productList: { ProductList: categories_array },
       categories,
+      ProductData : data
     },
   };
 }

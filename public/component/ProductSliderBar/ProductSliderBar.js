@@ -38,7 +38,7 @@ function ProductSliderBar(props) {
           <div key={index}>
             <Link href={`/product/${category}`}>
               <div
-                className={`${ProductSliderBarStyle.categoriesTitle} pointer fw-bold px-5 py-2 text-uppercase text-white text-center border border-start-0 rounded-end`}
+                className={`${ProductSliderBarStyle.categoriesTitle} pointer fw-bold px-sm-5 py-2 text-uppercase text-white text-center border border-start-0 rounded-end`}
               >
                 {category}
               </div>

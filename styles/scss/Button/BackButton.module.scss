@@ -1,0 +1,12 @@
+.BackButton{
+    width: max(100px,10vw);
+    height: max(50px,3vw);
+    transition: .5 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: lemonchiffon;
+    padding: .2rem 0;
+    display: grid;
+    place-items: center;
+    &:hover{
+        background-color: orange;
+    }
+}

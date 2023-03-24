@@ -1,14 +1,14 @@
 .swiper {
     padding-bottom: 2.2rem!important;
     .swiper-button-next{
-        right:60px;
+        right:max(20px,4vw);
         bottom: 10px;
         top: auto;
         z-index: 1;
     }
     .swiper-button-prev{
         left: auto;
-        right:120px;
+        right:max(70px,8vw);
         bottom: 10px;
         top: auto;
     }

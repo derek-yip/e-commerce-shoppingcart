@@ -48,6 +48,11 @@
       -1px 1px 0 #000, 1px 1px 0 #000;
   }
 }
+.sectionContent{
+  h1{
+    margin: max(10px,.8vw) 0;
+  }
+}
 
 .firstContainer {
   position: relative;
@@ -94,15 +99,15 @@
       display: none;
     }
     &::before {
-      font-size: max(10px,2vw);
-      content: 'VIEW MORE';
+      font-size: max(8px,2vw);
+      content: 'SEE MORE';
     }
   }
 }
 .sideImage_left {
   position: relative;
   grid-area: 1 / 1 / 6 / 2;
-  width: max(100px,15vw);
+  width: max(100px,100%);
   height: 100%;
   display: flex;
   justify-content: center;
@@ -115,7 +120,7 @@
 .sideImage_right {
   position: relative;
   grid-area: 1 / 5 / 6 / 6;
-  width: max(100px,15vw);
+  width: max(100px,100%);
   height: 100%;
   display: flex;
   justify-content: center;
@@ -162,6 +167,8 @@
     text-align: justify;
   }
 }
+
+
 
 @keyframes image_animation {
   0% {

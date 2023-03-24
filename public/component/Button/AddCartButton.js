@@ -18,12 +18,12 @@ function AddCartButton(props) {
   } = useShoppingCart()
 
   return (
-    <div>
+    <div className='w-75 mx-auto'>
     {
       quantity===0?
-        <div className={`pointer AddCartButton w-100 text-center fw-normal fs-2 text-uppercase border border-dark rounded ${AddCartButtonStyle.AddCartButton}`}
+        <div className={`pointer AddCartButton w-100 text-center fw-normal py-3 text-uppercase border border-dark rounded ${AddCartButtonStyle.AddCartButton}`}
         onClick={()=>{AddCartQuantity(id); AddCartTotal(price);}}>
-          <p>Add to Cart</p>
+          <p className='fw-bold'>Add to Cart</p>
         </div>
       :
         <div className={`d-flex align-items-center flex-column w-100`} style={{gap:'.5rem', transition:'none'}}>

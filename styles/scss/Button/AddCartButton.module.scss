@@ -2,8 +2,10 @@
     background-color: lemonchiffon;
     padding: .2rem 0;
     z-index: 1;
-    transition: none;
     &:hover{
         background-color: orange;
+    }
+    p{
+        font-size: max(20px,1.3vw);
     }
 }
