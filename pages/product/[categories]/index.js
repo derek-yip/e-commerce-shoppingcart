@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import ProductSliderBar from '../../../public/component/ProductSliderBar/ProductSliderBar';
 import Link from 'next/link';
 import BackButtonStyle from '../../../styles/scss/Button/BackButton.module.scss'
-import { useShoppingCart } from '../../../public/context/ShoppingCartContext';
+// import { useShoppingCart } from '../../../public/context/ShoppingCartContext';
 
-function categories({ productList, categories,ProductData }) {
-  const { setProductData } = useShoppingCart();
-  useEffect(() => {
-    setProductData(ProductData.ProductData);
-  }, []);
+function categories({ productList, categories }) {
+  // const { setProductData } = useShoppingCart();
+  // useEffect(() => {
+  //   setProductData(ProductData.ProductData);
+  // }, []);
 
   return (
     <div className={`${categories}`}>
@@ -43,7 +43,7 @@ export async function getServerSideProps(context) {
     props: {
       productList: { ProductList: categories_array },
       categories,
-      ProductData : data
+      // ProductData : data
     },
   };
 }
