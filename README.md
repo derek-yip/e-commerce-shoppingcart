@@ -45,3 +45,6 @@ P.s Still have bugs to fix about data storage after refreshing
 ## Products' details and Images Credit by
 1. Amazon.com
 2. Pexels
+
+##CopyRight
+This Website is for self-learning purpose without any commercial purposes. Products' images and details are copied from Amazon.com, Amazon.com reserved all right. And some images obtained from pngTree, pngTree reserved all right.
